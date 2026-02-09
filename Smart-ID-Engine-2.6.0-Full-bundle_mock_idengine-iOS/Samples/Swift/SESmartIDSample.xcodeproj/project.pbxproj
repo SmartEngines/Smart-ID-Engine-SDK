@@ -1,0 +1,1375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1215F62324BF6156003A6838 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1215F62224BF6156003A6838 /* ImageViewCell.swift */; };
+		12556B5024C86BA900E44AE2 /* FieldNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12556B4F24C86BA900E44AE2 /* FieldNameLabel.swift */; };
+		1266A0C924C05BE9006898A9 /* DocumentTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266A0C824C05BE9006898A9 /* DocumentTypeCell.swift */; };
+		12EAC5BC24780B5600E750A4 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAC5BB24780B5500E750A4 /* TextFieldCell.swift */; };
+		12EAC5BE24785C6A00E750A4 /* DocumentTypesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAC5BD24785C6A00E750A4 /* DocumentTypesListController.swift */; };
+		8402F3D11F7ACF4600BAE922 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D01F7ACF4600BAE922 /* AVFoundation.framework */; };
+		8402F3D31F7ACF5D00BAE922 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D21F7ACF5D00BAE922 /* CoreImage.framework */; };
+		8402F3D51F7ACF6900BAE922 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D41F7ACF6900BAE922 /* CoreFoundation.framework */; };
+		8402F3D71F7ACF8E00BAE922 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D61F7ACF8D00BAE922 /* CoreVideo.framework */; };
+		8402F3D91F7ACFAA00BAE922 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D81F7ACFAA00BAE922 /* CoreMedia.framework */; };
+		845FFD2F1F8504F7001CB33D /* SmartIDSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FFD151F8504F7001CB33D /* SmartIDSampleViewController.swift */; };
+		845FFD321F8504F7001CB33D /* SmartIDSampleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FFD191F8504F7001CB33D /* SmartIDSampleAppDelegate.swift */; };
+		A74B5DC62D089073005541D9 /* NFCPassportReader in Frameworks */ = {isa = PBXBuildFile; productRef = A74B5DC52D089073005541D9 /* NFCPassportReader */; };
+		A74B5DC82D089079005541D9 /* NFCPassportReader in Frameworks */ = {isa = PBXBuildFile; productRef = A74B5DC72D089079005541D9 /* NFCPassportReader */; };
+		A75D38F52C81F9A500414018 /* info.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38CA2C81F9A500414018 /* info.mm */; };
+		A75D38F62C81F9A500414018 /* info.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38CA2C81F9A500414018 /* info.mm */; };
+		A75D38F72C81F9A500414018 /* id_engine.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38CC2C81F9A500414018 /* id_engine.mm */; };
+		A75D38F82C81F9A500414018 /* id_engine.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38CC2C81F9A500414018 /* id_engine.mm */; };
+		A75D38F92C81F9A500414018 /* liveness.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38CE2C81F9A500414018 /* liveness.mm */; };
+		A75D38FA2C81F9A500414018 /* liveness.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38CE2C81F9A500414018 /* liveness.mm */; };
+		A75D38FB2C81F9A500414018 /* similarity.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38CF2C81F9A500414018 /* similarity.mm */; };
+		A75D38FC2C81F9A500414018 /* similarity.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38CF2C81F9A500414018 /* similarity.mm */; };
+		A75D38FD2C81F9A500414018 /* id_face_session.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D12C81F9A500414018 /* id_face_session.mm */; };
+		A75D38FE2C81F9A500414018 /* id_face_session.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D12C81F9A500414018 /* id_face_session.mm */; };
+		A75D38FF2C81F9A500414018 /* id_face_settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D32C81F9A500414018 /* id_face_settings.mm */; };
+		A75D39002C81F9A500414018 /* id_face_settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D32C81F9A500414018 /* id_face_settings.mm */; };
+		A75D39012C81F9A500414018 /* id_container.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D52C81F9A500414018 /* id_container.mm */; };
+		A75D39022C81F9A500414018 /* id_container.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D52C81F9A500414018 /* id_container.mm */; };
+		A75D39032C81F9A500414018 /* id_field_session.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D72C81F9A500414018 /* id_field_session.mm */; };
+		A75D39042C81F9A500414018 /* id_field_session.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D72C81F9A500414018 /* id_field_session.mm */; };
+		A75D39052C81F9A500414018 /* id_field_settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D92C81F9A500414018 /* id_field_settings.mm */; };
+		A75D39062C81F9A500414018 /* id_field_settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38D92C81F9A500414018 /* id_field_settings.mm */; };
+		A75D39072C81F9A500414018 /* animated.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DB2C81F9A500414018 /* animated.mm */; };
+		A75D39082C81F9A500414018 /* animated.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DB2C81F9A500414018 /* animated.mm */; };
+		A75D39092C81F9A500414018 /* base_field_info.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DC2C81F9A500414018 /* base_field_info.mm */; };
+		A75D390A2C81F9A500414018 /* base_field_info.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DC2C81F9A500414018 /* base_field_info.mm */; };
+		A75D390B2C81F9A500414018 /* check.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DD2C81F9A500414018 /* check.mm */; };
+		A75D390C2C81F9A500414018 /* check.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DD2C81F9A500414018 /* check.mm */; };
+		A75D390D2C81F9A600414018 /* id_image_field.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DE2C81F9A500414018 /* id_image_field.mm */; };
+		A75D390E2C81F9A600414018 /* id_image_field.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DE2C81F9A500414018 /* id_image_field.mm */; };
+		A75D390F2C81F9A600414018 /* id_text_field.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DF2C81F9A500414018 /* id_text_field.mm */; };
+		A75D39102C81F9A600414018 /* id_text_field.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38DF2C81F9A500414018 /* id_text_field.mm */; };
+		A75D39112C81F9A600414018 /* id_result.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E12C81F9A500414018 /* id_result.mm */; };
+		A75D39122C81F9A600414018 /* id_result.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E12C81F9A500414018 /* id_result.mm */; };
+		A75D39132C81F9A600414018 /* template_detection_result.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E22C81F9A500414018 /* template_detection_result.mm */; };
+		A75D39142C81F9A600414018 /* template_detection_result.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E22C81F9A500414018 /* template_detection_result.mm */; };
+		A75D39152C81F9A600414018 /* template_segmentation_result.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E32C81F9A500414018 /* template_segmentation_result.mm */; };
+		A75D39162C81F9A600414018 /* template_segmentation_result.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E32C81F9A500414018 /* template_segmentation_result.mm */; };
+		A75D39172C81F9A600414018 /* id_session.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E52C81F9A500414018 /* id_session.mm */; };
+		A75D39182C81F9A600414018 /* id_session.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E52C81F9A500414018 /* id_session.mm */; };
+		A75D39192C81F9A600414018 /* id_session_settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E72C81F9A500414018 /* id_session_settings.mm */; };
+		A75D391A2C81F9A600414018 /* id_session_settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E72C81F9A500414018 /* id_session_settings.mm */; };
+		A75D391B2C81F9A600414018 /* anomaly.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E92C81F9A500414018 /* anomaly.mm */; };
+		A75D391C2C81F9A600414018 /* anomaly.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38E92C81F9A500414018 /* anomaly.mm */; };
+		A75D391D2C81F9A600414018 /* frame_info.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38EA2C81F9A500414018 /* frame_info.mm */; };
+		A75D391E2C81F9A600414018 /* frame_info.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38EA2C81F9A500414018 /* frame_info.mm */; };
+		A75D391F2C81F9A600414018 /* instruction.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38EB2C81F9A500414018 /* instruction.mm */; };
+		A75D39202C81F9A600414018 /* instruction.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38EB2C81F9A500414018 /* instruction.mm */; };
+		A75D39212C81F9A600414018 /* transcript.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38EC2C81F9A500414018 /* transcript.mm */; };
+		A75D39222C81F9A600414018 /* transcript.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38EC2C81F9A500414018 /* transcript.mm */; };
+		A75D39232C81F9A600414018 /* session.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38EE2C81F9A500414018 /* session.mm */; };
+		A75D39242C81F9A600414018 /* session.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38EE2C81F9A500414018 /* session.mm */; };
+		A75D39252C81F9A600414018 /* settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38F02C81F9A500414018 /* settings.mm */; };
+		A75D39262C81F9A600414018 /* settings.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38F02C81F9A500414018 /* settings.mm */; };
+		A75D39272C81F9A600414018 /* id_proxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38F22C81F9A500414018 /* id_proxy.mm */; };
+		A75D39282C81F9A600414018 /* id_proxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = A75D38F22C81F9A500414018 /* id_proxy.mm */; };
+		A79556592C74B79700194D1E /* SmartIDVauthViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79556582C74B79700194D1E /* SmartIDVauthViewController.mm */; };
+		A7CB700A2C78B5AB00A28731 /* byte_string.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E15298D36DC0039FA13 /* byte_string.mm */; };
+		A7CB700E2C78B5AB00A28731 /* serializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E17298D36DC0039FA13 /* serializer.mm */; };
+		A7CB70102C78B5AB00A28731 /* SmartIDVauthSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB70062C78B5A600A28731 /* SmartIDVauthSampleViewController.swift */; };
+		A7CB70122C78B5AB00A28731 /* SmartIDCaptureButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18EB2A86550900F50914 /* SmartIDCaptureButton.mm */; };
+		A7CB70172C78B5AB00A28731 /* projective_transform.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E09298D36DC0039FA13 /* projective_transform.mm */; };
+		A7CB70182C78B5AB00A28731 /* DocumentTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266A0C824C05BE9006898A9 /* DocumentTypeCell.swift */; };
+		A7CB701A2C78B5AB00A28731 /* SmartIDViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DD2298D343D0039FA13 /* SmartIDViewController.mm */; };
+		A7CB701C2C78B5AB00A28731 /* set.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E10298D36DC0039FA13 /* set.mm */; };
+		A7CB70202C78B5AB00A28731 /* se_common_proxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0E298D36DC0039FA13 /* se_common_proxy.mm */; };
+		A7CB70222C78B5AB00A28731 /* point.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E07298D36DC0039FA13 /* point.mm */; };
+		A7CB70242C78B5AB00A28731 /* SmartIDVideoPreviewView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18F12A86551500F50914 /* SmartIDVideoPreviewView.mm */; };
+		A7CB70252C78B5AB00A28731 /* SmartIDQuadrangleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18EC2A86550900F50914 /* SmartIDQuadrangleView.mm */; };
+		A7CB70292C78B5AB00A28731 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1215F62224BF6156003A6838 /* ImageViewCell.swift */; };
+		A7CB702B2C78B5AB00A28731 /* CameraFocusSquare.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18F22A86551500F50914 /* CameraFocusSquare.mm */; };
+		A7CB702C2C78B5AB00A28731 /* DocumentTypesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAC5BD24785C6A00E750A4 /* DocumentTypesListController.swift */; };
+		A7CB702E2C78B5AB00A28731 /* ocr_char.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E13298D36DC0039FA13 /* ocr_char.mm */; };
+		A7CB702F2C78B5AB00A28731 /* params.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E18298D36DC0039FA13 /* params.mm */; };
+		A7CB70302C78B5AB00A28731 /* ocr_string.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E14298D36DC0039FA13 /* ocr_string.mm */; };
+		A7CB70322C78B5AB00A28731 /* quad.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0A298D36DC0039FA13 /* quad.mm */; };
+		A7CB70352C78B5AB00A28731 /* strings_vector_iterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E05298D36DC0039FA13 /* strings_vector_iterator.mm */; };
+		A7CB70362C78B5AB00A28731 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EAC5BB24780B5500E750A4 /* TextFieldCell.swift */; };
+		A7CB70372C78B5AB00A28731 /* SmartIDSampleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FFD191F8504F7001CB33D /* SmartIDSampleAppDelegate.swift */; };
+		A7CB70392C78B5AB00A28731 /* size.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0C298D36DC0039FA13 /* size.mm */; };
+		A7CB703A2C78B5AB00A28731 /* SmartIDVauthViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79556582C74B79700194D1E /* SmartIDVauthViewController.mm */; };
+		A7CB703B2C78B5AB00A28731 /* strings_set_iterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E03298D36DC0039FA13 /* strings_set_iterator.mm */; };
+		A7CB703C2C78B5AB00A28731 /* quads_map_iterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E08298D36DC0039FA13 /* quads_map_iterator.mm */; };
+		A7CB703D2C78B5AB00A28731 /* poly.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0D298D36DC0039FA13 /* poly.mm */; };
+		A7CB703E2C78B5AB00A28731 /* FieldNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12556B4F24C86BA900E44AE2 /* FieldNameLabel.swift */; };
+		A7CB703F2C78B5AB00A28731 /* SmartIDCameraManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18F32A86551500F50914 /* SmartIDCameraManager.mm */; };
+		A7CB70412C78B5AB00A28731 /* ocr_char_variant.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E12298D36DC0039FA13 /* ocr_char_variant.mm */; };
+		A7CB70432C78B5AB00A28731 /* se_image.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E01298D36DC0039FA13 /* se_image.mm */; };
+		A7CB70442C78B5AB00A28731 /* SmartIDRoiView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18ED2A86550900F50914 /* SmartIDRoiView.mm */; };
+		A7CB70462C78B5AB00A28731 /* rect.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0B298D36DC0039FA13 /* rect.mm */; };
+		A7CB70472C78B5AB00A28731 /* SmartIDEngineInstance.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DD0298D343D0039FA13 /* SmartIDEngineInstance.mm */; };
+		A7CB70482C78B5AB00A28731 /* strings_map_iterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E04298D36DC0039FA13 /* strings_map_iterator.mm */; };
+		A7CB704B2C78B5AB00A28731 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D81F7ACFAA00BAE922 /* CoreMedia.framework */; };
+		A7CB704C2C78B5AB00A28731 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D61F7ACF8D00BAE922 /* CoreVideo.framework */; };
+		A7CB704D2C78B5AB00A28731 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D41F7ACF6900BAE922 /* CoreFoundation.framework */; };
+		A7CB704E2C78B5AB00A28731 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D21F7ACF5D00BAE922 /* CoreImage.framework */; };
+		A7CB704F2C78B5AB00A28731 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3D01F7ACF4600BAE922 /* AVFoundation.framework */; };
+		A7CB70512C78B5AB00A28731 /* data in Resources */ = {isa = PBXBuildFile; fileRef = A9B97E85298D47900039FA13 /* data */; };
+		A7CB70572C78BCBF00A28731 /* SmartIDVauthSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB70062C78B5A600A28731 /* SmartIDVauthSampleViewController.swift */; };
+		A7CB70582C78BCC200A28731 /* SmartIDSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FFD151F8504F7001CB33D /* SmartIDSampleViewController.swift */; };
+		A9B97DE3298D343D0039FA13 /* SmartIDEngineInstance.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DD0298D343D0039FA13 /* SmartIDEngineInstance.mm */; };
+		A9B97DE4298D343D0039FA13 /* SmartIDViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DD2298D343D0039FA13 /* SmartIDViewController.mm */; };
+		A9B97E5A298D36DC0039FA13 /* se_image.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E01298D36DC0039FA13 /* se_image.mm */; };
+		A9B97E5B298D36DC0039FA13 /* strings_set_iterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E03298D36DC0039FA13 /* strings_set_iterator.mm */; };
+		A9B97E5C298D36DC0039FA13 /* strings_map_iterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E04298D36DC0039FA13 /* strings_map_iterator.mm */; };
+		A9B97E5D298D36DC0039FA13 /* strings_vector_iterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E05298D36DC0039FA13 /* strings_vector_iterator.mm */; };
+		A9B97E5E298D36DC0039FA13 /* point.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E07298D36DC0039FA13 /* point.mm */; };
+		A9B97E5F298D36DC0039FA13 /* quads_map_iterator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E08298D36DC0039FA13 /* quads_map_iterator.mm */; };
+		A9B97E60298D36DC0039FA13 /* projective_transform.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E09298D36DC0039FA13 /* projective_transform.mm */; };
+		A9B97E61298D36DC0039FA13 /* quad.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0A298D36DC0039FA13 /* quad.mm */; };
+		A9B97E62298D36DC0039FA13 /* rect.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0B298D36DC0039FA13 /* rect.mm */; };
+		A9B97E63298D36DC0039FA13 /* size.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0C298D36DC0039FA13 /* size.mm */; };
+		A9B97E64298D36DC0039FA13 /* poly.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0D298D36DC0039FA13 /* poly.mm */; };
+		A9B97E65298D36DC0039FA13 /* se_common_proxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E0E298D36DC0039FA13 /* se_common_proxy.mm */; };
+		A9B97E66298D36DC0039FA13 /* set.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E10298D36DC0039FA13 /* set.mm */; };
+		A9B97E67298D36DC0039FA13 /* ocr_char_variant.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E12298D36DC0039FA13 /* ocr_char_variant.mm */; };
+		A9B97E68298D36DC0039FA13 /* ocr_char.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E13298D36DC0039FA13 /* ocr_char.mm */; };
+		A9B97E69298D36DC0039FA13 /* ocr_string.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E14298D36DC0039FA13 /* ocr_string.mm */; };
+		A9B97E6A298D36DC0039FA13 /* byte_string.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E15298D36DC0039FA13 /* byte_string.mm */; };
+		A9B97E6B298D36DC0039FA13 /* serializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E17298D36DC0039FA13 /* serializer.mm */; };
+		A9B97E6C298D36DC0039FA13 /* params.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9B97E18298D36DC0039FA13 /* params.mm */; };
+		A9B97E86298D47900039FA13 /* data in Resources */ = {isa = PBXBuildFile; fileRef = A9B97E85298D47900039FA13 /* data */; };
+		B10C18EE2A86550900F50914 /* SmartIDCaptureButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18EB2A86550900F50914 /* SmartIDCaptureButton.mm */; };
+		B10C18EF2A86550900F50914 /* SmartIDQuadrangleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18EC2A86550900F50914 /* SmartIDQuadrangleView.mm */; };
+		B10C18F02A86550900F50914 /* SmartIDRoiView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18ED2A86550900F50914 /* SmartIDRoiView.mm */; };
+		B10C18F42A86551500F50914 /* SmartIDVideoPreviewView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18F12A86551500F50914 /* SmartIDVideoPreviewView.mm */; };
+		B10C18F52A86551500F50914 /* CameraFocusSquare.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18F22A86551500F50914 /* CameraFocusSquare.mm */; };
+		B10C18F62A86551500F50914 /* SmartIDCameraManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10C18F32A86551500F50914 /* SmartIDCameraManager.mm */; };
+		B1C3F3C22C7C83A9005EEB04 /* idengine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C3F3C12C7C83A9005EEB04 /* idengine.xcframework */; };
+		B1C3F3C82C7C853E005EEB04 /* idengine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C3F3C12C7C83A9005EEB04 /* idengine.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1215F62224BF6156003A6838 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		12556B4F24C86BA900E44AE2 /* FieldNameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldNameLabel.swift; sourceTree = "<group>"; };
+		1266A0C824C05BE9006898A9 /* DocumentTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTypeCell.swift; sourceTree = "<group>"; };
+		12EAC5BB24780B5500E750A4 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		12EAC5BD24785C6A00E750A4 /* DocumentTypesListController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = DocumentTypesListController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		8402F2F81F7ACC9F00BAE922 /* SESmartIDSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SESmartIDSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8402F3D01F7ACF4600BAE922 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8402F3D21F7ACF5D00BAE922 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		8402F3D41F7ACF6900BAE922 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8402F3D61F7ACF8D00BAE922 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8402F3D81F7ACFAA00BAE922 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		845FFD151F8504F7001CB33D /* SmartIDSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SmartIDSampleViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		845FFD191F8504F7001CB33D /* SmartIDSampleAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SmartIDSampleAppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
+		845FFD1A1F8504F7001CB33D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A74B5DC92D09AD19005541D9 /* SESmartIDSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SESmartIDSample.entitlements; sourceTree = "<group>"; };
+		A74B5DCA2D09B1CC005541D9 /* SESmartIDVauthSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SESmartIDVauthSample.entitlements; sourceTree = "<group>"; };
+		A75D38A42C81F9A500414018 /* id_document_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_document_info.h; sourceTree = "<group>"; };
+		A75D38A52C81F9A500414018 /* id_engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_engine.h; sourceTree = "<group>"; };
+		A75D38A62C81F9A500414018 /* id_face_feedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_face_feedback.h; sourceTree = "<group>"; };
+		A75D38A72C81F9A500414018 /* id_face_result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_face_result.h; sourceTree = "<group>"; };
+		A75D38A82C81F9A500414018 /* id_face_session_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_face_session_settings.h; sourceTree = "<group>"; };
+		A75D38A92C81F9A500414018 /* id_face_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_face_session.h; sourceTree = "<group>"; };
+		A75D38AA2C81F9A500414018 /* id_feedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_feedback.h; sourceTree = "<group>"; };
+		A75D38AB2C81F9A500414018 /* id_field_processing_session_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_field_processing_session_settings.h; sourceTree = "<group>"; };
+		A75D38AC2C81F9A500414018 /* id_field_processing_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_field_processing_session.h; sourceTree = "<group>"; };
+		A75D38AD2C81F9A500414018 /* id_fields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_fields.h; sourceTree = "<group>"; };
+		A75D38AE2C81F9A500414018 /* id_result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_result.h; sourceTree = "<group>"; };
+		A75D38AF2C81F9A500414018 /* id_session_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_session_settings.h; sourceTree = "<group>"; };
+		A75D38B02C81F9A500414018 /* id_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_session.h; sourceTree = "<group>"; };
+		A75D38B12C81F9A500414018 /* id_video_authentication_callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_video_authentication_callbacks.h; sourceTree = "<group>"; };
+		A75D38B22C81F9A500414018 /* id_video_authentication_result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_video_authentication_result.h; sourceTree = "<group>"; };
+		A75D38B32C81F9A500414018 /* id_video_authentication_session_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_video_authentication_session_settings.h; sourceTree = "<group>"; };
+		A75D38B42C81F9A500414018 /* id_video_authentication_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_video_authentication_session.h; sourceTree = "<group>"; };
+		A75D38B72C81F9A500414018 /* id_document_info_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_document_info_impl.h; sourceTree = "<group>"; };
+		A75D38B82C81F9A500414018 /* id_engine_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_engine_impl.h; sourceTree = "<group>"; };
+		A75D38B92C81F9A500414018 /* id_face_result_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_face_result_impl.h; sourceTree = "<group>"; };
+		A75D38BA2C81F9A500414018 /* id_face_session_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_face_session_impl.h; sourceTree = "<group>"; };
+		A75D38BB2C81F9A500414018 /* id_face_session_settings_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_face_session_settings_impl.h; sourceTree = "<group>"; };
+		A75D38BC2C81F9A500414018 /* id_feedback_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_feedback_impl.h; sourceTree = "<group>"; };
+		A75D38BD2C81F9A500414018 /* id_field_processing_session_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_field_processing_session_impl.h; sourceTree = "<group>"; };
+		A75D38BE2C81F9A500414018 /* id_field_processing_session_settings_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_field_processing_session_settings_impl.h; sourceTree = "<group>"; };
+		A75D38BF2C81F9A500414018 /* id_fields_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_fields_impl.h; sourceTree = "<group>"; };
+		A75D38C02C81F9A500414018 /* id_proxy_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_proxy_impl.h; sourceTree = "<group>"; };
+		A75D38C12C81F9A500414018 /* id_result_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_result_impl.h; sourceTree = "<group>"; };
+		A75D38C22C81F9A500414018 /* id_session_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_session_impl.h; sourceTree = "<group>"; };
+		A75D38C32C81F9A500414018 /* id_session_settings_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_session_settings_impl.h; sourceTree = "<group>"; };
+		A75D38C42C81F9A500414018 /* id_video_authentication_callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_video_authentication_callbacks.h; sourceTree = "<group>"; };
+		A75D38C52C81F9A500414018 /* id_video_authentication_result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_video_authentication_result.h; sourceTree = "<group>"; };
+		A75D38C62C81F9A500414018 /* id_video_authentication_session_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_video_authentication_session_settings.h; sourceTree = "<group>"; };
+		A75D38C72C81F9A500414018 /* id_video_authentication_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id_video_authentication_session.h; sourceTree = "<group>"; };
+		A75D38CA2C81F9A500414018 /* info.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = info.mm; sourceTree = "<group>"; };
+		A75D38CC2C81F9A500414018 /* id_engine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_engine.mm; sourceTree = "<group>"; };
+		A75D38CE2C81F9A500414018 /* liveness.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = liveness.mm; sourceTree = "<group>"; };
+		A75D38CF2C81F9A500414018 /* similarity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = similarity.mm; sourceTree = "<group>"; };
+		A75D38D12C81F9A500414018 /* id_face_session.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_face_session.mm; sourceTree = "<group>"; };
+		A75D38D32C81F9A500414018 /* id_face_settings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_face_settings.mm; sourceTree = "<group>"; };
+		A75D38D52C81F9A500414018 /* id_container.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_container.mm; sourceTree = "<group>"; };
+		A75D38D72C81F9A500414018 /* id_field_session.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_field_session.mm; sourceTree = "<group>"; };
+		A75D38D92C81F9A500414018 /* id_field_settings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_field_settings.mm; sourceTree = "<group>"; };
+		A75D38DB2C81F9A500414018 /* animated.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = animated.mm; sourceTree = "<group>"; };
+		A75D38DC2C81F9A500414018 /* base_field_info.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = base_field_info.mm; sourceTree = "<group>"; };
+		A75D38DD2C81F9A500414018 /* check.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = check.mm; sourceTree = "<group>"; };
+		A75D38DE2C81F9A500414018 /* id_image_field.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_image_field.mm; sourceTree = "<group>"; };
+		A75D38DF2C81F9A500414018 /* id_text_field.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_text_field.mm; sourceTree = "<group>"; };
+		A75D38E12C81F9A500414018 /* id_result.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_result.mm; sourceTree = "<group>"; };
+		A75D38E22C81F9A500414018 /* template_detection_result.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = template_detection_result.mm; sourceTree = "<group>"; };
+		A75D38E32C81F9A500414018 /* template_segmentation_result.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = template_segmentation_result.mm; sourceTree = "<group>"; };
+		A75D38E52C81F9A500414018 /* id_session.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_session.mm; sourceTree = "<group>"; };
+		A75D38E72C81F9A500414018 /* id_session_settings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_session_settings.mm; sourceTree = "<group>"; };
+		A75D38E92C81F9A500414018 /* anomaly.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = anomaly.mm; sourceTree = "<group>"; };
+		A75D38EA2C81F9A500414018 /* frame_info.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = frame_info.mm; sourceTree = "<group>"; };
+		A75D38EB2C81F9A500414018 /* instruction.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = instruction.mm; sourceTree = "<group>"; };
+		A75D38EC2C81F9A500414018 /* transcript.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = transcript.mm; sourceTree = "<group>"; };
+		A75D38EE2C81F9A500414018 /* session.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = session.mm; sourceTree = "<group>"; };
+		A75D38F02C81F9A500414018 /* settings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = settings.mm; sourceTree = "<group>"; };
+		A75D38F22C81F9A500414018 /* id_proxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = id_proxy.mm; sourceTree = "<group>"; };
+		A79556572C74B79700194D1E /* SmartIDVauthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartIDVauthViewController.h; sourceTree = "<group>"; };
+		A79556582C74B79700194D1E /* SmartIDVauthViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; path = SmartIDVauthViewController.mm; sourceTree = "<group>"; tabWidth = 2; };
+		A7CB70062C78B5A600A28731 /* SmartIDVauthSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SmartIDVauthSampleViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		A7CB70552C78B5AB00A28731 /* SESmartIDVauthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SESmartIDVauthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B97DCF298D343D0039FA13 /* SmartIDEngineInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartIDEngineInstance.h; sourceTree = "<group>"; };
+		A9B97DD0298D343D0039FA13 /* SmartIDEngineInstance.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; path = SmartIDEngineInstance.mm; sourceTree = "<group>"; tabWidth = 2; };
+		A9B97DD2298D343D0039FA13 /* SmartIDViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmartIDViewController.mm; sourceTree = "<group>"; };
+		A9B97DD3298D343D0039FA13 /* SmartIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartIDViewController.h; sourceTree = "<group>"; };
+		A9B97DD7298D343D0039FA13 /* SmartIDCaptureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartIDCaptureButton.h; sourceTree = "<group>"; };
+		A9B97DD8298D343D0039FA13 /* SmartIDRoiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartIDRoiView.h; sourceTree = "<group>"; };
+		A9B97DD9298D343D0039FA13 /* SmartIDQuadrangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartIDQuadrangleView.h; sourceTree = "<group>"; };
+		A9B97DDB298D343D0039FA13 /* SmartID-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmartID-Bridging-Header.h"; sourceTree = "<group>"; };
+		A9B97DDD298D343D0039FA13 /* SmartIDVideoPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartIDVideoPreviewView.h; sourceTree = "<group>"; };
+		A9B97DDE298D343D0039FA13 /* SmartIDCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartIDCameraManager.h; sourceTree = "<group>"; };
+		A9B97DE2298D343D0039FA13 /* CameraFocusSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFocusSquare.h; sourceTree = "<group>"; };
+		A9B97DEF298D36DC0039FA13 /* se_strings_set_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_strings_set_impl.h; sourceTree = "<group>"; };
+		A9B97DF0298D36DC0039FA13 /* se_strings_iterator_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_strings_iterator_impl.h; sourceTree = "<group>"; };
+		A9B97DF1298D36DC0039FA13 /* se_image_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_image_impl.h; sourceTree = "<group>"; };
+		A9B97DF2298D36DC0039FA13 /* se_geometry_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_geometry_impl.h; sourceTree = "<group>"; };
+		A9B97DF3298D36DC0039FA13 /* se_common_proxy_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_common_proxy_impl.h; sourceTree = "<group>"; };
+		A9B97DF4298D36DC0039FA13 /* se_string_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_string_impl.h; sourceTree = "<group>"; };
+		A9B97DF5298D36DC0039FA13 /* se_serialization_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_serialization_impl.h; sourceTree = "<group>"; };
+		A9B97DF8298D36DC0039FA13 /* se_strings_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_strings_iterator.h; sourceTree = "<group>"; };
+		A9B97DF9298D36DC0039FA13 /* se_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_common.h; sourceTree = "<group>"; };
+		A9B97DFA298D36DC0039FA13 /* se_strings_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_strings_set.h; sourceTree = "<group>"; };
+		A9B97DFB298D36DC0039FA13 /* se_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_string.h; sourceTree = "<group>"; };
+		A9B97DFC298D36DC0039FA13 /* se_serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_serialization.h; sourceTree = "<group>"; };
+		A9B97DFD298D36DC0039FA13 /* se_geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_geometry.h; sourceTree = "<group>"; };
+		A9B97DFE298D36DC0039FA13 /* se_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = se_image.h; sourceTree = "<group>"; };
+		A9B97E01298D36DC0039FA13 /* se_image.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = se_image.mm; sourceTree = "<group>"; };
+		A9B97E03298D36DC0039FA13 /* strings_set_iterator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = strings_set_iterator.mm; sourceTree = "<group>"; };
+		A9B97E04298D36DC0039FA13 /* strings_map_iterator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = strings_map_iterator.mm; sourceTree = "<group>"; };
+		A9B97E05298D36DC0039FA13 /* strings_vector_iterator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = strings_vector_iterator.mm; sourceTree = "<group>"; };
+		A9B97E07298D36DC0039FA13 /* point.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = point.mm; sourceTree = "<group>"; };
+		A9B97E08298D36DC0039FA13 /* quads_map_iterator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = quads_map_iterator.mm; sourceTree = "<group>"; };
+		A9B97E09298D36DC0039FA13 /* projective_transform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = projective_transform.mm; sourceTree = "<group>"; };
+		A9B97E0A298D36DC0039FA13 /* quad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = quad.mm; sourceTree = "<group>"; };
+		A9B97E0B298D36DC0039FA13 /* rect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = rect.mm; sourceTree = "<group>"; };
+		A9B97E0C298D36DC0039FA13 /* size.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = size.mm; sourceTree = "<group>"; };
+		A9B97E0D298D36DC0039FA13 /* poly.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = poly.mm; sourceTree = "<group>"; };
+		A9B97E0E298D36DC0039FA13 /* se_common_proxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = se_common_proxy.mm; sourceTree = "<group>"; };
+		A9B97E10298D36DC0039FA13 /* set.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = set.mm; sourceTree = "<group>"; };
+		A9B97E12298D36DC0039FA13 /* ocr_char_variant.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ocr_char_variant.mm; sourceTree = "<group>"; };
+		A9B97E13298D36DC0039FA13 /* ocr_char.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ocr_char.mm; sourceTree = "<group>"; };
+		A9B97E14298D36DC0039FA13 /* ocr_string.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ocr_string.mm; sourceTree = "<group>"; };
+		A9B97E15298D36DC0039FA13 /* byte_string.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = byte_string.mm; sourceTree = "<group>"; };
+		A9B97E17298D36DC0039FA13 /* serializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = serializer.mm; sourceTree = "<group>"; };
+		A9B97E18298D36DC0039FA13 /* params.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = params.mm; sourceTree = "<group>"; };
+		A9B97E85298D47900039FA13 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../../SESmartIDCore/data; sourceTree = "<group>"; };
+		B10C18EB2A86550900F50914 /* SmartIDCaptureButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmartIDCaptureButton.mm; sourceTree = "<group>"; };
+		B10C18EC2A86550900F50914 /* SmartIDQuadrangleView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmartIDQuadrangleView.mm; sourceTree = "<group>"; };
+		B10C18ED2A86550900F50914 /* SmartIDRoiView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmartIDRoiView.mm; sourceTree = "<group>"; };
+		B10C18F12A86551500F50914 /* SmartIDVideoPreviewView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmartIDVideoPreviewView.mm; sourceTree = "<group>"; };
+		B10C18F22A86551500F50914 /* CameraFocusSquare.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraFocusSquare.mm; sourceTree = "<group>"; };
+		B10C18F32A86551500F50914 /* SmartIDCameraManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmartIDCameraManager.mm; sourceTree = "<group>"; };
+		B1C3F3C12C7C83A9005EEB04 /* idengine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = idengine.xcframework; path = ../../SESmartIDCore/lib/idengine.xcframework; sourceTree = "<group>"; };
+		F2F4874927637F0C00CC1677 /* multiengine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = multiengine.xcframework; path = ../../SESmartIDCore/lib/multiengine.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8402F2F51F7ACC9E00BAE922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C3F3C22C7C83A9005EEB04 /* idengine.xcframework in Frameworks */,
+				8402F3D91F7ACFAA00BAE922 /* CoreMedia.framework in Frameworks */,
+				8402F3D71F7ACF8E00BAE922 /* CoreVideo.framework in Frameworks */,
+				8402F3D51F7ACF6900BAE922 /* CoreFoundation.framework in Frameworks */,
+				A74B5DC62D089073005541D9 /* NFCPassportReader in Frameworks */,
+				8402F3D31F7ACF5D00BAE922 /* CoreImage.framework in Frameworks */,
+				8402F3D11F7ACF4600BAE922 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CB70492C78B5AB00A28731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C3F3C82C7C853E005EEB04 /* idengine.xcframework in Frameworks */,
+				A7CB704B2C78B5AB00A28731 /* CoreMedia.framework in Frameworks */,
+				A7CB704C2C78B5AB00A28731 /* CoreVideo.framework in Frameworks */,
+				A7CB704D2C78B5AB00A28731 /* CoreFoundation.framework in Frameworks */,
+				A74B5DC82D089079005541D9 /* NFCPassportReader in Frameworks */,
+				A7CB704E2C78B5AB00A28731 /* CoreImage.framework in Frameworks */,
+				A7CB704F2C78B5AB00A28731 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1215F62124BF6135003A6838 /* ResultTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				12EAC5BB24780B5500E750A4 /* TextFieldCell.swift */,
+				1215F62224BF6156003A6838 /* ImageViewCell.swift */,
+				12556B4F24C86BA900E44AE2 /* FieldNameLabel.swift */,
+			);
+			path = ResultTableViewController;
+			sourceTree = "<group>";
+		};
+		1266A0C724C05BA5006898A9 /* DocumentTypesTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				12EAC5BD24785C6A00E750A4 /* DocumentTypesListController.swift */,
+				1266A0C824C05BE9006898A9 /* DocumentTypeCell.swift */,
+			);
+			path = DocumentTypesTableViewController;
+			sourceTree = "<group>";
+		};
+		8402F2EF1F7ACC9E00BAE922 = {
+			isa = PBXGroup;
+			children = (
+				A74B5DCA2D09B1CC005541D9 /* SESmartIDVauthSample.entitlements */,
+				A74B5DC92D09AD19005541D9 /* SESmartIDSample.entitlements */,
+				A9B97E85298D47900039FA13 /* data */,
+				A9B97DEB298D36DC0039FA13 /* wrap */,
+				A9B97DCD298D343D0039FA13 /* SESmartID */,
+				845FFD141F8504F7001CB33D /* SESmartIDSample */,
+				8402F2F91F7ACC9F00BAE922 /* Products */,
+				8402F3121F7ACE1100BAE922 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8402F2F91F7ACC9F00BAE922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8402F2F81F7ACC9F00BAE922 /* SESmartIDSample.app */,
+				A7CB70552C78B5AB00A28731 /* SESmartIDVauthSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8402F3121F7ACE1100BAE922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1C3F3C12C7C83A9005EEB04 /* idengine.xcframework */,
+				F2F4874927637F0C00CC1677 /* multiengine.xcframework */,
+				8402F3D81F7ACFAA00BAE922 /* CoreMedia.framework */,
+				8402F3D61F7ACF8D00BAE922 /* CoreVideo.framework */,
+				8402F3D41F7ACF6900BAE922 /* CoreFoundation.framework */,
+				8402F3D21F7ACF5D00BAE922 /* CoreImage.framework */,
+				8402F3D01F7ACF4600BAE922 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		845FFD141F8504F7001CB33D /* SESmartIDSample */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB70062C78B5A600A28731 /* SmartIDVauthSampleViewController.swift */,
+				1266A0C724C05BA5006898A9 /* DocumentTypesTableViewController */,
+				1215F62124BF6135003A6838 /* ResultTableViewController */,
+				845FFD1A1F8504F7001CB33D /* Info.plist */,
+				845FFD151F8504F7001CB33D /* SmartIDSampleViewController.swift */,
+				845FFD191F8504F7001CB33D /* SmartIDSampleAppDelegate.swift */,
+			);
+			path = SESmartIDSample;
+			sourceTree = "<group>";
+		};
+		A75D38B52C81F9A500414018 /* objcidengine */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38A42C81F9A500414018 /* id_document_info.h */,
+				A75D38A52C81F9A500414018 /* id_engine.h */,
+				A75D38A62C81F9A500414018 /* id_face_feedback.h */,
+				A75D38A72C81F9A500414018 /* id_face_result.h */,
+				A75D38A82C81F9A500414018 /* id_face_session_settings.h */,
+				A75D38A92C81F9A500414018 /* id_face_session.h */,
+				A75D38AA2C81F9A500414018 /* id_feedback.h */,
+				A75D38AB2C81F9A500414018 /* id_field_processing_session_settings.h */,
+				A75D38AC2C81F9A500414018 /* id_field_processing_session.h */,
+				A75D38AD2C81F9A500414018 /* id_fields.h */,
+				A75D38AE2C81F9A500414018 /* id_result.h */,
+				A75D38AF2C81F9A500414018 /* id_session_settings.h */,
+				A75D38B02C81F9A500414018 /* id_session.h */,
+				A75D38B12C81F9A500414018 /* id_video_authentication_callbacks.h */,
+				A75D38B22C81F9A500414018 /* id_video_authentication_result.h */,
+				A75D38B32C81F9A500414018 /* id_video_authentication_session_settings.h */,
+				A75D38B42C81F9A500414018 /* id_video_authentication_session.h */,
+			);
+			path = objcidengine;
+			sourceTree = "<group>";
+		};
+		A75D38B62C81F9A500414018 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38B52C81F9A500414018 /* objcidengine */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A75D38C82C81F9A500414018 /* objcidengine_impl */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38B72C81F9A500414018 /* id_document_info_impl.h */,
+				A75D38B82C81F9A500414018 /* id_engine_impl.h */,
+				A75D38B92C81F9A500414018 /* id_face_result_impl.h */,
+				A75D38BA2C81F9A500414018 /* id_face_session_impl.h */,
+				A75D38BB2C81F9A500414018 /* id_face_session_settings_impl.h */,
+				A75D38BC2C81F9A500414018 /* id_feedback_impl.h */,
+				A75D38BD2C81F9A500414018 /* id_field_processing_session_impl.h */,
+				A75D38BE2C81F9A500414018 /* id_field_processing_session_settings_impl.h */,
+				A75D38BF2C81F9A500414018 /* id_fields_impl.h */,
+				A75D38C02C81F9A500414018 /* id_proxy_impl.h */,
+				A75D38C12C81F9A500414018 /* id_result_impl.h */,
+				A75D38C22C81F9A500414018 /* id_session_impl.h */,
+				A75D38C32C81F9A500414018 /* id_session_settings_impl.h */,
+				A75D38C42C81F9A500414018 /* id_video_authentication_callbacks.h */,
+				A75D38C52C81F9A500414018 /* id_video_authentication_result.h */,
+				A75D38C62C81F9A500414018 /* id_video_authentication_session_settings.h */,
+				A75D38C72C81F9A500414018 /* id_video_authentication_session.h */,
+			);
+			path = objcidengine_impl;
+			sourceTree = "<group>";
+		};
+		A75D38C92C81F9A500414018 /* include_impl */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38C82C81F9A500414018 /* objcidengine_impl */,
+			);
+			path = include_impl;
+			sourceTree = "<group>";
+		};
+		A75D38CB2C81F9A500414018 /* id_document_info */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38CA2C81F9A500414018 /* info.mm */,
+			);
+			path = id_document_info;
+			sourceTree = "<group>";
+		};
+		A75D38CD2C81F9A500414018 /* id_engine */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38CC2C81F9A500414018 /* id_engine.mm */,
+			);
+			path = id_engine;
+			sourceTree = "<group>";
+		};
+		A75D38D02C81F9A500414018 /* id_face_result */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38CE2C81F9A500414018 /* liveness.mm */,
+				A75D38CF2C81F9A500414018 /* similarity.mm */,
+			);
+			path = id_face_result;
+			sourceTree = "<group>";
+		};
+		A75D38D22C81F9A500414018 /* id_face_session */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38D12C81F9A500414018 /* id_face_session.mm */,
+			);
+			path = id_face_session;
+			sourceTree = "<group>";
+		};
+		A75D38D42C81F9A500414018 /* id_face_session_settings */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38D32C81F9A500414018 /* id_face_settings.mm */,
+			);
+			path = id_face_session_settings;
+			sourceTree = "<group>";
+		};
+		A75D38D62C81F9A500414018 /* id_feedback */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38D52C81F9A500414018 /* id_container.mm */,
+			);
+			path = id_feedback;
+			sourceTree = "<group>";
+		};
+		A75D38D82C81F9A500414018 /* id_field_processing_session */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38D72C81F9A500414018 /* id_field_session.mm */,
+			);
+			path = id_field_processing_session;
+			sourceTree = "<group>";
+		};
+		A75D38DA2C81F9A500414018 /* id_field_processing_session_settings */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38D92C81F9A500414018 /* id_field_settings.mm */,
+			);
+			path = id_field_processing_session_settings;
+			sourceTree = "<group>";
+		};
+		A75D38E02C81F9A500414018 /* id_fields */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38DB2C81F9A500414018 /* animated.mm */,
+				A75D38DC2C81F9A500414018 /* base_field_info.mm */,
+				A75D38DD2C81F9A500414018 /* check.mm */,
+				A75D38DE2C81F9A500414018 /* id_image_field.mm */,
+				A75D38DF2C81F9A500414018 /* id_text_field.mm */,
+			);
+			path = id_fields;
+			sourceTree = "<group>";
+		};
+		A75D38E42C81F9A500414018 /* id_result */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38E12C81F9A500414018 /* id_result.mm */,
+				A75D38E22C81F9A500414018 /* template_detection_result.mm */,
+				A75D38E32C81F9A500414018 /* template_segmentation_result.mm */,
+			);
+			path = id_result;
+			sourceTree = "<group>";
+		};
+		A75D38E62C81F9A500414018 /* id_session */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38E52C81F9A500414018 /* id_session.mm */,
+			);
+			path = id_session;
+			sourceTree = "<group>";
+		};
+		A75D38E82C81F9A500414018 /* id_session_settings */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38E72C81F9A500414018 /* id_session_settings.mm */,
+			);
+			path = id_session_settings;
+			sourceTree = "<group>";
+		};
+		A75D38ED2C81F9A500414018 /* id_video_authentication_result */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38E92C81F9A500414018 /* anomaly.mm */,
+				A75D38EA2C81F9A500414018 /* frame_info.mm */,
+				A75D38EB2C81F9A500414018 /* instruction.mm */,
+				A75D38EC2C81F9A500414018 /* transcript.mm */,
+			);
+			path = id_video_authentication_result;
+			sourceTree = "<group>";
+		};
+		A75D38EF2C81F9A500414018 /* id_video_authentication_session */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38EE2C81F9A500414018 /* session.mm */,
+			);
+			path = id_video_authentication_session;
+			sourceTree = "<group>";
+		};
+		A75D38F12C81F9A500414018 /* id_video_authentication_session_settings */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38F02C81F9A500414018 /* settings.mm */,
+			);
+			path = id_video_authentication_session_settings;
+			sourceTree = "<group>";
+		};
+		A75D38F32C81F9A500414018 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38CB2C81F9A500414018 /* id_document_info */,
+				A75D38CD2C81F9A500414018 /* id_engine */,
+				A75D38D02C81F9A500414018 /* id_face_result */,
+				A75D38D22C81F9A500414018 /* id_face_session */,
+				A75D38D42C81F9A500414018 /* id_face_session_settings */,
+				A75D38D62C81F9A500414018 /* id_feedback */,
+				A75D38D82C81F9A500414018 /* id_field_processing_session */,
+				A75D38DA2C81F9A500414018 /* id_field_processing_session_settings */,
+				A75D38E02C81F9A500414018 /* id_fields */,
+				A75D38E42C81F9A500414018 /* id_result */,
+				A75D38E62C81F9A500414018 /* id_session */,
+				A75D38E82C81F9A500414018 /* id_session_settings */,
+				A75D38ED2C81F9A500414018 /* id_video_authentication_result */,
+				A75D38EF2C81F9A500414018 /* id_video_authentication_session */,
+				A75D38F12C81F9A500414018 /* id_video_authentication_session_settings */,
+				A75D38F22C81F9A500414018 /* id_proxy.mm */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A75D38F42C81F9A500414018 /* objcidengine */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38B62C81F9A500414018 /* include */,
+				A75D38C92C81F9A500414018 /* include_impl */,
+				A75D38F32C81F9A500414018 /* src */,
+			);
+			path = objcidengine;
+			sourceTree = "<group>";
+		};
+		A9B97DCD298D343D0039FA13 /* SESmartID */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97DCE298D343D0039FA13 /* Core */,
+				A9B97DD1298D343D0039FA13 /* Controller */,
+				A9B97DDB298D343D0039FA13 /* SmartID-Bridging-Header.h */,
+				A9B97DDC298D343D0039FA13 /* Media */,
+			);
+			name = SESmartID;
+			path = ../../SESmartID;
+			sourceTree = "<group>";
+		};
+		A9B97DCE298D343D0039FA13 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97DCF298D343D0039FA13 /* SmartIDEngineInstance.h */,
+				A9B97DD0298D343D0039FA13 /* SmartIDEngineInstance.mm */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A9B97DD1298D343D0039FA13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A79556572C74B79700194D1E /* SmartIDVauthViewController.h */,
+				A79556582C74B79700194D1E /* SmartIDVauthViewController.mm */,
+				A9B97DD2298D343D0039FA13 /* SmartIDViewController.mm */,
+				A9B97DD3298D343D0039FA13 /* SmartIDViewController.h */,
+				A9B97DD4298D343D0039FA13 /* View */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9B97DD4298D343D0039FA13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B10C18EB2A86550900F50914 /* SmartIDCaptureButton.mm */,
+				B10C18EC2A86550900F50914 /* SmartIDQuadrangleView.mm */,
+				B10C18ED2A86550900F50914 /* SmartIDRoiView.mm */,
+				A9B97DD7298D343D0039FA13 /* SmartIDCaptureButton.h */,
+				A9B97DD8298D343D0039FA13 /* SmartIDRoiView.h */,
+				A9B97DD9298D343D0039FA13 /* SmartIDQuadrangleView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9B97DDC298D343D0039FA13 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B10C18F22A86551500F50914 /* CameraFocusSquare.mm */,
+				B10C18F32A86551500F50914 /* SmartIDCameraManager.mm */,
+				B10C18F12A86551500F50914 /* SmartIDVideoPreviewView.mm */,
+				A9B97DDD298D343D0039FA13 /* SmartIDVideoPreviewView.h */,
+				A9B97DDE298D343D0039FA13 /* SmartIDCameraManager.h */,
+				A9B97DE2298D343D0039FA13 /* CameraFocusSquare.h */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		A9B97DEB298D36DC0039FA13 /* wrap */ = {
+			isa = PBXGroup;
+			children = (
+				A75D38F42C81F9A500414018 /* objcidengine */,
+				A9B97DEC298D36DC0039FA13 /* objcsecommon */,
+			);
+			name = wrap;
+			path = ../../SESmartIDCore/wrap;
+			sourceTree = "<group>";
+		};
+		A9B97DEC298D36DC0039FA13 /* objcsecommon */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97DED298D36DC0039FA13 /* include_impl */,
+				A9B97DF6298D36DC0039FA13 /* include */,
+				A9B97DFF298D36DC0039FA13 /* src */,
+			);
+			path = objcsecommon;
+			sourceTree = "<group>";
+		};
+		A9B97DED298D36DC0039FA13 /* include_impl */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97DEE298D36DC0039FA13 /* objcsecommon_impl */,
+			);
+			path = include_impl;
+			sourceTree = "<group>";
+		};
+		A9B97DEE298D36DC0039FA13 /* objcsecommon_impl */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97DEF298D36DC0039FA13 /* se_strings_set_impl.h */,
+				A9B97DF0298D36DC0039FA13 /* se_strings_iterator_impl.h */,
+				A9B97DF1298D36DC0039FA13 /* se_image_impl.h */,
+				A9B97DF2298D36DC0039FA13 /* se_geometry_impl.h */,
+				A9B97DF3298D36DC0039FA13 /* se_common_proxy_impl.h */,
+				A9B97DF4298D36DC0039FA13 /* se_string_impl.h */,
+				A9B97DF5298D36DC0039FA13 /* se_serialization_impl.h */,
+			);
+			path = objcsecommon_impl;
+			sourceTree = "<group>";
+		};
+		A9B97DF6298D36DC0039FA13 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97DF7298D36DC0039FA13 /* objcsecommon */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A9B97DF7298D36DC0039FA13 /* objcsecommon */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97DF8298D36DC0039FA13 /* se_strings_iterator.h */,
+				A9B97DF9298D36DC0039FA13 /* se_common.h */,
+				A9B97DFA298D36DC0039FA13 /* se_strings_set.h */,
+				A9B97DFB298D36DC0039FA13 /* se_string.h */,
+				A9B97DFC298D36DC0039FA13 /* se_serialization.h */,
+				A9B97DFD298D36DC0039FA13 /* se_geometry.h */,
+				A9B97DFE298D36DC0039FA13 /* se_image.h */,
+			);
+			path = objcsecommon;
+			sourceTree = "<group>";
+		};
+		A9B97DFF298D36DC0039FA13 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97E00298D36DC0039FA13 /* se_image */,
+				A9B97E02298D36DC0039FA13 /* se_strings_iterator */,
+				A9B97E06298D36DC0039FA13 /* se_geometry */,
+				A9B97E0E298D36DC0039FA13 /* se_common_proxy.mm */,
+				A9B97E0F298D36DC0039FA13 /* se_strings_set */,
+				A9B97E11298D36DC0039FA13 /* se_string */,
+				A9B97E16298D36DC0039FA13 /* se_serialization */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A9B97E00298D36DC0039FA13 /* se_image */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97E01298D36DC0039FA13 /* se_image.mm */,
+			);
+			path = se_image;
+			sourceTree = "<group>";
+		};
+		A9B97E02298D36DC0039FA13 /* se_strings_iterator */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97E03298D36DC0039FA13 /* strings_set_iterator.mm */,
+				A9B97E04298D36DC0039FA13 /* strings_map_iterator.mm */,
+				A9B97E05298D36DC0039FA13 /* strings_vector_iterator.mm */,
+			);
+			path = se_strings_iterator;
+			sourceTree = "<group>";
+		};
+		A9B97E06298D36DC0039FA13 /* se_geometry */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97E07298D36DC0039FA13 /* point.mm */,
+				A9B97E08298D36DC0039FA13 /* quads_map_iterator.mm */,
+				A9B97E09298D36DC0039FA13 /* projective_transform.mm */,
+				A9B97E0A298D36DC0039FA13 /* quad.mm */,
+				A9B97E0B298D36DC0039FA13 /* rect.mm */,
+				A9B97E0C298D36DC0039FA13 /* size.mm */,
+				A9B97E0D298D36DC0039FA13 /* poly.mm */,
+			);
+			path = se_geometry;
+			sourceTree = "<group>";
+		};
+		A9B97E0F298D36DC0039FA13 /* se_strings_set */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97E10298D36DC0039FA13 /* set.mm */,
+			);
+			path = se_strings_set;
+			sourceTree = "<group>";
+		};
+		A9B97E11298D36DC0039FA13 /* se_string */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97E12298D36DC0039FA13 /* ocr_char_variant.mm */,
+				A9B97E13298D36DC0039FA13 /* ocr_char.mm */,
+				A9B97E14298D36DC0039FA13 /* ocr_string.mm */,
+				A9B97E15298D36DC0039FA13 /* byte_string.mm */,
+			);
+			path = se_string;
+			sourceTree = "<group>";
+		};
+		A9B97E16298D36DC0039FA13 /* se_serialization */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97E17298D36DC0039FA13 /* serializer.mm */,
+				A9B97E18298D36DC0039FA13 /* params.mm */,
+			);
+			path = se_serialization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8402F2F71F7ACC9E00BAE922 /* SESmartIDSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8402F30A1F7ACC9F00BAE922 /* Build configuration list for PBXNativeTarget "SESmartIDSample" */;
+			buildPhases = (
+				8402F2F41F7ACC9E00BAE922 /* Sources */,
+				8402F2F51F7ACC9E00BAE922 /* Frameworks */,
+				8402F2F61F7ACC9E00BAE922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SESmartIDSample;
+			packageProductDependencies = (
+				A74B5DC52D089073005541D9 /* NFCPassportReader */,
+			);
+			productName = "se-smart-id-swift";
+			productReference = 8402F2F81F7ACC9F00BAE922 /* SESmartIDSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7CB70082C78B5AB00A28731 /* SESmartIDVauthSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7CB70522C78B5AB00A28731 /* Build configuration list for PBXNativeTarget "SESmartIDVauthSample" */;
+			buildPhases = (
+				A7CB70092C78B5AB00A28731 /* Sources */,
+				A7CB70492C78B5AB00A28731 /* Frameworks */,
+				A7CB70502C78B5AB00A28731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SESmartIDVauthSample;
+			packageProductDependencies = (
+				A74B5DC72D089079005541D9 /* NFCPassportReader */,
+			);
+			productName = "se-smart-id-swift";
+			productReference = A7CB70552C78B5AB00A28731 /* SESmartIDVauthSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8402F2F01F7ACC9E00BAE922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = com.smartengines;
+				TargetAttributes = {
+					8402F2F71F7ACC9E00BAE922 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8402F2F31F7ACC9E00BAE922 /* Build configuration list for PBXProject "SESmartIDSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8402F2EF1F7ACC9E00BAE922;
+			packageReferences = (
+				A74B5DC42D088F7A005541D9 /* XCRemoteSwiftPackageReference "NFCPassportReader" */,
+			);
+			productRefGroup = 8402F2F91F7ACC9F00BAE922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8402F2F71F7ACC9E00BAE922 /* SESmartIDSample */,
+				A7CB70082C78B5AB00A28731 /* SESmartIDVauthSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8402F2F61F7ACC9E00BAE922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B97E86298D47900039FA13 /* data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CB70502C78B5AB00A28731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CB70512C78B5AB00A28731 /* data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8402F2F41F7ACC9E00BAE922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75D38F52C81F9A500414018 /* info.mm in Sources */,
+				A75D38FD2C81F9A500414018 /* id_face_session.mm in Sources */,
+				A9B97E6A298D36DC0039FA13 /* byte_string.mm in Sources */,
+				A9B97E6B298D36DC0039FA13 /* serializer.mm in Sources */,
+				A7CB70572C78BCBF00A28731 /* SmartIDVauthSampleViewController.swift in Sources */,
+				B10C18EE2A86550900F50914 /* SmartIDCaptureButton.mm in Sources */,
+				A9B97E60298D36DC0039FA13 /* projective_transform.mm in Sources */,
+				A75D38F72C81F9A500414018 /* id_engine.mm in Sources */,
+				1266A0C924C05BE9006898A9 /* DocumentTypeCell.swift in Sources */,
+				A9B97DE4298D343D0039FA13 /* SmartIDViewController.mm in Sources */,
+				A9B97E66298D36DC0039FA13 /* set.mm in Sources */,
+				A9B97E65298D36DC0039FA13 /* se_common_proxy.mm in Sources */,
+				A9B97E5E298D36DC0039FA13 /* point.mm in Sources */,
+				A75D39112C81F9A600414018 /* id_result.mm in Sources */,
+				B10C18F42A86551500F50914 /* SmartIDVideoPreviewView.mm in Sources */,
+				A75D390B2C81F9A500414018 /* check.mm in Sources */,
+				B10C18EF2A86550900F50914 /* SmartIDQuadrangleView.mm in Sources */,
+				1215F62324BF6156003A6838 /* ImageViewCell.swift in Sources */,
+				B10C18F52A86551500F50914 /* CameraFocusSquare.mm in Sources */,
+				A75D39092C81F9A500414018 /* base_field_info.mm in Sources */,
+				12EAC5BE24785C6A00E750A4 /* DocumentTypesListController.swift in Sources */,
+				A9B97E68298D36DC0039FA13 /* ocr_char.mm in Sources */,
+				A9B97E6C298D36DC0039FA13 /* params.mm in Sources */,
+				A9B97E69298D36DC0039FA13 /* ocr_string.mm in Sources */,
+				A9B97E61298D36DC0039FA13 /* quad.mm in Sources */,
+				A75D390F2C81F9A600414018 /* id_text_field.mm in Sources */,
+				A9B97E5D298D36DC0039FA13 /* strings_vector_iterator.mm in Sources */,
+				A75D39192C81F9A600414018 /* id_session_settings.mm in Sources */,
+				A75D391F2C81F9A600414018 /* instruction.mm in Sources */,
+				12EAC5BC24780B5600E750A4 /* TextFieldCell.swift in Sources */,
+				A75D390D2C81F9A600414018 /* id_image_field.mm in Sources */,
+				845FFD321F8504F7001CB33D /* SmartIDSampleAppDelegate.swift in Sources */,
+				A9B97E63298D36DC0039FA13 /* size.mm in Sources */,
+				A79556592C74B79700194D1E /* SmartIDVauthViewController.mm in Sources */,
+				A9B97E5B298D36DC0039FA13 /* strings_set_iterator.mm in Sources */,
+				A75D39212C81F9A600414018 /* transcript.mm in Sources */,
+				A75D38FF2C81F9A500414018 /* id_face_settings.mm in Sources */,
+				A75D39272C81F9A600414018 /* id_proxy.mm in Sources */,
+				A75D391B2C81F9A600414018 /* anomaly.mm in Sources */,
+				A75D39252C81F9A600414018 /* settings.mm in Sources */,
+				A9B97E5F298D36DC0039FA13 /* quads_map_iterator.mm in Sources */,
+				A75D38FB2C81F9A500414018 /* similarity.mm in Sources */,
+				A75D391D2C81F9A600414018 /* frame_info.mm in Sources */,
+				A75D39132C81F9A600414018 /* template_detection_result.mm in Sources */,
+				A9B97E64298D36DC0039FA13 /* poly.mm in Sources */,
+				A75D38F92C81F9A500414018 /* liveness.mm in Sources */,
+				A75D39012C81F9A500414018 /* id_container.mm in Sources */,
+				12556B5024C86BA900E44AE2 /* FieldNameLabel.swift in Sources */,
+				B10C18F62A86551500F50914 /* SmartIDCameraManager.mm in Sources */,
+				A9B97E67298D36DC0039FA13 /* ocr_char_variant.mm in Sources */,
+				A9B97E5A298D36DC0039FA13 /* se_image.mm in Sources */,
+				B10C18F02A86550900F50914 /* SmartIDRoiView.mm in Sources */,
+				A75D39172C81F9A600414018 /* id_session.mm in Sources */,
+				845FFD2F1F8504F7001CB33D /* SmartIDSampleViewController.swift in Sources */,
+				A75D39072C81F9A500414018 /* animated.mm in Sources */,
+				A9B97E62298D36DC0039FA13 /* rect.mm in Sources */,
+				A75D39152C81F9A600414018 /* template_segmentation_result.mm in Sources */,
+				A9B97DE3298D343D0039FA13 /* SmartIDEngineInstance.mm in Sources */,
+				A75D39032C81F9A500414018 /* id_field_session.mm in Sources */,
+				A9B97E5C298D36DC0039FA13 /* strings_map_iterator.mm in Sources */,
+				A75D39232C81F9A600414018 /* session.mm in Sources */,
+				A75D39052C81F9A500414018 /* id_field_settings.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CB70092C78B5AB00A28731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75D38F62C81F9A500414018 /* info.mm in Sources */,
+				A75D38FE2C81F9A500414018 /* id_face_session.mm in Sources */,
+				A7CB700A2C78B5AB00A28731 /* byte_string.mm in Sources */,
+				A7CB700E2C78B5AB00A28731 /* serializer.mm in Sources */,
+				A7CB70102C78B5AB00A28731 /* SmartIDVauthSampleViewController.swift in Sources */,
+				A7CB70122C78B5AB00A28731 /* SmartIDCaptureButton.mm in Sources */,
+				A7CB70172C78B5AB00A28731 /* projective_transform.mm in Sources */,
+				A75D38F82C81F9A500414018 /* id_engine.mm in Sources */,
+				A7CB70182C78B5AB00A28731 /* DocumentTypeCell.swift in Sources */,
+				A7CB701A2C78B5AB00A28731 /* SmartIDViewController.mm in Sources */,
+				A7CB701C2C78B5AB00A28731 /* set.mm in Sources */,
+				A7CB70202C78B5AB00A28731 /* se_common_proxy.mm in Sources */,
+				A7CB70222C78B5AB00A28731 /* point.mm in Sources */,
+				A75D39122C81F9A600414018 /* id_result.mm in Sources */,
+				A7CB70242C78B5AB00A28731 /* SmartIDVideoPreviewView.mm in Sources */,
+				A75D390C2C81F9A500414018 /* check.mm in Sources */,
+				A7CB70252C78B5AB00A28731 /* SmartIDQuadrangleView.mm in Sources */,
+				A7CB70582C78BCC200A28731 /* SmartIDSampleViewController.swift in Sources */,
+				A7CB70292C78B5AB00A28731 /* ImageViewCell.swift in Sources */,
+				A75D390A2C81F9A500414018 /* base_field_info.mm in Sources */,
+				A7CB702B2C78B5AB00A28731 /* CameraFocusSquare.mm in Sources */,
+				A7CB702C2C78B5AB00A28731 /* DocumentTypesListController.swift in Sources */,
+				A7CB702E2C78B5AB00A28731 /* ocr_char.mm in Sources */,
+				A7CB702F2C78B5AB00A28731 /* params.mm in Sources */,
+				A7CB70302C78B5AB00A28731 /* ocr_string.mm in Sources */,
+				A75D39102C81F9A600414018 /* id_text_field.mm in Sources */,
+				A7CB70322C78B5AB00A28731 /* quad.mm in Sources */,
+				A75D391A2C81F9A600414018 /* id_session_settings.mm in Sources */,
+				A75D39202C81F9A600414018 /* instruction.mm in Sources */,
+				A7CB70352C78B5AB00A28731 /* strings_vector_iterator.mm in Sources */,
+				A75D390E2C81F9A600414018 /* id_image_field.mm in Sources */,
+				A7CB70362C78B5AB00A28731 /* TextFieldCell.swift in Sources */,
+				A7CB70372C78B5AB00A28731 /* SmartIDSampleAppDelegate.swift in Sources */,
+				A7CB70392C78B5AB00A28731 /* size.mm in Sources */,
+				A7CB703A2C78B5AB00A28731 /* SmartIDVauthViewController.mm in Sources */,
+				A75D39222C81F9A600414018 /* transcript.mm in Sources */,
+				A75D39002C81F9A500414018 /* id_face_settings.mm in Sources */,
+				A75D39282C81F9A600414018 /* id_proxy.mm in Sources */,
+				A75D391C2C81F9A600414018 /* anomaly.mm in Sources */,
+				A75D39262C81F9A600414018 /* settings.mm in Sources */,
+				A7CB703B2C78B5AB00A28731 /* strings_set_iterator.mm in Sources */,
+				A75D38FC2C81F9A500414018 /* similarity.mm in Sources */,
+				A75D391E2C81F9A600414018 /* frame_info.mm in Sources */,
+				A75D39142C81F9A600414018 /* template_detection_result.mm in Sources */,
+				A7CB703C2C78B5AB00A28731 /* quads_map_iterator.mm in Sources */,
+				A75D38FA2C81F9A500414018 /* liveness.mm in Sources */,
+				A75D39022C81F9A500414018 /* id_container.mm in Sources */,
+				A7CB703D2C78B5AB00A28731 /* poly.mm in Sources */,
+				A7CB703E2C78B5AB00A28731 /* FieldNameLabel.swift in Sources */,
+				A7CB703F2C78B5AB00A28731 /* SmartIDCameraManager.mm in Sources */,
+				A7CB70412C78B5AB00A28731 /* ocr_char_variant.mm in Sources */,
+				A7CB70432C78B5AB00A28731 /* se_image.mm in Sources */,
+				A75D39182C81F9A600414018 /* id_session.mm in Sources */,
+				A7CB70442C78B5AB00A28731 /* SmartIDRoiView.mm in Sources */,
+				A75D39082C81F9A500414018 /* animated.mm in Sources */,
+				A7CB70462C78B5AB00A28731 /* rect.mm in Sources */,
+				A75D39162C81F9A600414018 /* template_segmentation_result.mm in Sources */,
+				A7CB70472C78B5AB00A28731 /* SmartIDEngineInstance.mm in Sources */,
+				A75D39042C81F9A500414018 /* id_field_session.mm in Sources */,
+				A7CB70482C78B5AB00A28731 /* strings_map_iterator.mm in Sources */,
+				A75D39242C81F9A600414018 /* session.mm in Sources */,
+				A75D39062C81F9A500414018 /* id_field_settings.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8402F3081F7ACC9F00BAE922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"IDENGINE_EMBED_BUNDLE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8402F3091F7ACC9F00BAE922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "IDENGINE_EMBED_BUNDLE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8402F30B1F7ACC9F00BAE922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SESmartIDSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WYKYM6UTY3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../../SESmartIDCore/lib;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/../../SESmartIDCore/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcsecommon/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcidengine/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcsecommon/include_impl,
+					$SRCROOT/../../SESmartIDCore/wrap/objcidengine/include_impl,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SESmartIDSample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = $SRCROOT/../../SESmartIDCore/lib;
+				MARKETING_VERSION = 2.6.0;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartengines.swiftsample00;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../../SESmartID/SmartID-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8402F30C1F7ACC9F00BAE922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SESmartIDSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WYKYM6UTY3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../../SESmartIDCore/lib;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/../../SESmartIDCore/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcsecommon/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcidengine/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcsecommon/include_impl,
+					$SRCROOT/../../SESmartIDCore/wrap/objcidengine/include_impl,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SESmartIDSample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = $SRCROOT/../../SESmartIDCore/lib;
+				MARKETING_VERSION = 2.6.0;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartengines.swiftsample00;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../../SESmartID/SmartID-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7CB70532C78B5AB00A28731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SESmartIDVauthSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WYKYM6UTY3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../../SESmartIDCore/lib;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/../../SESmartIDCore/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcsecommon/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcidengine/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcsecommon/include_impl,
+					$SRCROOT/../../SESmartIDCore/wrap/objcidengine/include_impl,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SESmartIDSample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = $SRCROOT/../../SESmartIDCore/lib;
+				MARKETING_VERSION = 2.6.0;
+				OTHER_SWIFT_FLAGS = "-D __VAUTH__";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartengines.swiftvauthsample00;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../../SESmartID/SmartID-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7CB70542C78B5AB00A28731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SESmartIDVauthSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WYKYM6UTY3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../../SESmartIDCore/lib;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/../../SESmartIDCore/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcsecommon/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcidengine/include,
+					$SRCROOT/../../SESmartIDCore/wrap/objcsecommon/include_impl,
+					$SRCROOT/../../SESmartIDCore/wrap/objcidengine/include_impl,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SESmartIDSample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = $SRCROOT/../../SESmartIDCore/lib;
+				MARKETING_VERSION = 2.6.0;
+				OTHER_SWIFT_FLAGS = "-D __VAUTH__";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartengines.swiftvauthsample00;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../../SESmartID/SmartID-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8402F2F31F7ACC9E00BAE922 /* Build configuration list for PBXProject "SESmartIDSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8402F3081F7ACC9F00BAE922 /* Debug */,
+				8402F3091F7ACC9F00BAE922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8402F30A1F7ACC9F00BAE922 /* Build configuration list for PBXNativeTarget "SESmartIDSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8402F30B1F7ACC9F00BAE922 /* Debug */,
+				8402F30C1F7ACC9F00BAE922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7CB70522C78B5AB00A28731 /* Build configuration list for PBXNativeTarget "SESmartIDVauthSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7CB70532C78B5AB00A28731 /* Debug */,
+				A7CB70542C78B5AB00A28731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A74B5DC42D088F7A005541D9 /* XCRemoteSwiftPackageReference "NFCPassportReader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndyQ/NFCPassportReader.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A74B5DC52D089073005541D9 /* NFCPassportReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A74B5DC42D088F7A005541D9 /* XCRemoteSwiftPackageReference "NFCPassportReader" */;
+			productName = NFCPassportReader;
+		};
+		A74B5DC72D089079005541D9 /* NFCPassportReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A74B5DC42D088F7A005541D9 /* XCRemoteSwiftPackageReference "NFCPassportReader" */;
+			productName = NFCPassportReader;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8402F2F01F7ACC9E00BAE922 /* Project object */;
+}

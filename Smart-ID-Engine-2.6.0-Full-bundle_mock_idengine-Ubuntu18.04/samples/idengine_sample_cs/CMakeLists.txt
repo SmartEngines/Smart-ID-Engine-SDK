@@ -1,0 +1,62 @@
+#  Copyright (c) 2016-2025, Smart Engines Service LLC
+#  All rights reserved.
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
+
+set(CMAKE_SKIP_BUILD_RPATH FALSE)
+set(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE)
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
+PROJECT (csidengine)
+
+# Include secommon and docengine headers
+INCLUDE_DIRECTORIES(./../../include/)
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/../../include/)
+
+# Find and setup SWIG
+find_library(IDENGINE_LIBRARY idengine HINTS ${LIBRARY_PATH})
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpermissive -std=c++11")
+find_package(SWIG 4.1.1 EXACT REQUIRED)
+INCLUDE(${SWIG_USE_FILE})
+
+# SWIG module in CMake does not know that dll library on Windows platform is RUNTIME target.
+# As the result, CMake puts library into wrong directory. Here is a fix for this issue.
+IF(WIN32)
+  SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
+  SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG "${CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG}")
+  SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE "${CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE}")
+ENDIF(WIN32)
+
+SET(IDENGINE_SWIG_FILE csidengine.i)
+SET(SECOMMON_SWIG_FILE secommon.i)
+
+
+# Generate CS sources
+SET_SOURCE_FILES_PROPERTIES(${IDENGINE_SWIG_FILE} PROPERTIES CPLUSPLUS ON)
+SET_SOURCE_FILES_PROPERTIES(${SECOMMON_SWIG_FILE} PROPERTIES CPLUSPLUS ON)
+# Set the C# namespace
+LIST(APPEND idengine_options -namespace se.id)
+LIST(APPEND secommon_options -namespace se.common)
+
+SET_SOURCE_FILES_PROPERTIES(${IDENGINE_SWIG_FILE} PROPERTIES SWIG_FLAGS "${idengine_options}")
+SET_SOURCE_FILES_PROPERTIES(${SECOMMON_SWIG_FILE} PROPERTIES SWIG_FLAGS "${secommon_options}")
+
+
+SWIG_ADD_MODULE(csidengine csharp ${IDENGINE_SWIG_FILE} ${SECOMMON_SWIG_FILE})
+
+TARGET_LINK_LIBRARIES(csidengine ${IDENGINE_LIBRARY})
+SWIG_LINK_LIBRARIES(csidengine ${IDENGINE_LIBRARY})
+
+set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/../../")
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/bin")
+
+# Install the csharp lib
+INSTALL(TARGETS csidengine
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION bin)
+
+# Install all Python files in /bindings/csharp dir
+INSTALL(
+  CODE "FILE(GLOB cs_files \"${CMAKE_CURRENT_BINARY_DIR}/*.cs\")"
+  CODE "FILE(INSTALL \${cs_files} DESTINATION \${CMAKE_INSTALL_PREFIX}/bindings/csharp/csidengine)"
+)

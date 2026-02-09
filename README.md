@@ -29,7 +29,7 @@ This is a collection of DEMO builds of Smart ID Engine SDK developed by Smart En
 
 ## :warning: Personalized signature :warning:
 
-All Smart ID Engine SDK clients are required to use a personalized signature for starting a session. The signature is validated offline and locks to the copy of the native library, thus ensures that only an authorized client may use it. The signature is a string with 256 characters.
+Starting from Smart ID Engine v1.4.0 users are required to use a personalized signature for starting a session. The signature is validated offline and locks to the copy of the native library, thus ensures that only an authorized client may use it. The signature is a string with 256 characters.
 
 You will need to manually copy the signature string and pass it as an argument for the `SpawnSession()` method ([see item 6 below](#general-usage-workflow)). Do NOT keep the signature in any asset files, only inside code. If possible, clients are encouraged to keep the signature in a controlled server and load it into the application via a secure channel, to ensure that signature and the library are separated.
 
