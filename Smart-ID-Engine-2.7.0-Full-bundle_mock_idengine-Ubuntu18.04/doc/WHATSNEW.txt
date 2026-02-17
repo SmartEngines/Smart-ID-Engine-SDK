@@ -1,0 +1,2139 @@
+# Smart ID Engine What's New
+
+Smart ID Engine 2.7.0
+
+* The detection of the main pages in Russian national passports has been significantly improved, along with faster and more accurate recognition of fields
+* Recognition of Russian national passports has been accelerated by 17% on the most frequently encountered client cases, while the overall recognition quality has also improved
+* Recognition of MRZ in Russian national passports has been improved and slightly accelerated. Support for non-standard fonts has been added, and confidence calculation for MRZ fields has been improved
+* Improved recognition of handwritten registration in Russian national passports - reduced recognition errors by 11%
+
+* Improved recognition of documents:
+  - Afghanistan: Driving license
+  - Belgium: Visa
+  - Costa Rica: ID Card
+  - Djibouti: Passport
+  - Dominican Republic: Residence permit
+  - Grenada: Passport
+  - Hungary: Passport
+  - Italy: Visa
+  - Lithuania: Visa
+  - Luxembourg: Visa
+  - Mali: Passport
+  - Mauritania: Passport
+  - Mauritius: Passport
+  - Monaco: ID Card
+  - Montenegro: Residence permit
+  - Niger: Passport
+  - Norway: Visa
+  - Paraguay: Driving license
+  - Poland: Visa
+  - Portugal: Visa
+  - Romania: Visa
+  - Russian Federation: Birth certificate, foreigner ID card, military ID card, Compulsory Health Insurance Policy (OMS), Paternity certificate, Temporary residence permit, SNILS, Tractor driving license
+  - Saint Lucia: ID Card
+  - Senegal: Passport
+  - Slovakia: Visa
+  - Slovenia: Visa
+  - Sweden: Visa
+  - Turks and Caicos Islands: ID Card
+  - United States of America: Passport card, Visa
+  - Uruguay: ID Card
+  - Zambia: Driving license
+
+* New ID document types added, which were not supported previously:
+  - Canada: ID Card (Nunavut)
+  - Caribbean Community - CARICOM: Passport
+  - Common Market for Eastern and Southern Africa - COMESA: Passport
+  - Philippines: Firearm permit, lawyer ID card
+  - Russian Federation: Specialist in welding production certificate (NAKS)
+  - Rwanda: Visa
+  - Sierra Leone: Residence permit
+  - Tanzania, United Republic of: Visa
+  - Uganda: Visa
+  - Yemen: Residence permit
+
+* New document subtypes added:
+  - Bahrain: ID Card
+  - Burundi: ID Card
+  - Chile: Driving license
+  - Indonesia: Driving license
+  - Pakistan: Driving license
+  - Philippines: Driving license, ID Card
+  - Russian Federation: Boating license, Temporary residence permit
+  - Saint Kitts and Nevis: Passport
+  - Slovakia: ID Card
+  - Somalia: ID Card
+  - Sweden: Driving license, Driving license
+  - Taiwan, Province of China: Driving license
+  - United States of America: Driving license (Pennsylvania)
+
+
+* Renamed/removed document types:
+  - bdi.drvlic.type2 was renamed to ben.drvlic.type1
+  - rus.residence.temporary was renamed to rus.residence.temporary.type1
+  - pan.id.type3 was removed
+
+
+* Now 2989(+27) document types supported in total with 4715(+43) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.6.0
+
+* The Russian national passport can now be recognized in any orientation in mobile scenarios
+* The simultaneous recognition and face-matching mode for the Russian national passport has been enhanced to support video processing
+* The localization of the Russian national passport now uses a 4.6-bit detector, with higher localization quality and speed
+* Reduced bundle size (approximately by 20%) and library size for standard builds
+* Improved text detection
+* Improved document detection in ‘anyrus’ mode
+* Accelerated all YOLO models by approximately 20%
+* Reduced the RAM consumption of the configuration
+* Reduced the footprint of the library by 3%
+
+* Improved recognition of documents:
+  - Brazil: ID card
+  - Cameroon: ID Card
+  - Denmark: Driving license
+  - India: Passport
+  - Korea, Republic of: Passport
+  - Romania: ID Card
+  - Russian Federation: handwritten registration stamps and handwritten national passport main pages, military ID card, Employment record, Paternity certificate, Divorce certificate, Marriage certificate, Stamp about previously issued passports, Driving license, Birth certificate, Name change certificate, SNILS, Vehicle registration certificate
+
+* New ID document types added, which were not supported previously:
+  - Australia: Firearm permit (Queensland)
+  - Cabo Verde: Visa
+  - Comoros: Visa
+  - Côte d'Ivoire: Visa
+  - France: Hunting license
+  - Guinea: Visa
+  - Hungary: student ID card
+  - Indonesia: Work permit
+  - Intergovernmental Authority on Development: Passport
+  - Mauritania: Visa
+  - Nigeria: Residence permit, Visa
+  - Peru: student ID card
+  - Russian Federation: Boating license, Pension certificate, Pension ID
+  - Rwanda: Driving license
+  - Somalia: Visa
+  - United Kingdom of Great Britain and Northern Ireland: military ID card
+
+* New document subtypes added:
+  - Angola: ID Card
+  - Bulgaria: Residence permit
+  - Cabo Verde: Driving license
+  - Cameroon: ID Card
+  - Canada: ID Card (British Columbia)
+  - Congo, Democratic Republic of the: Driving license
+  - Côte d'Ivoire: ID Card
+  - Guinea: ID Card
+  - Hungary: Driving license
+  - India: PAN Card, Passport
+  - Indonesia: Driving license
+  - Iran (Islamic Republic of): Driving license
+  - Italy: Residence permit
+  - Japan: Passport
+  - Kuwait: Driving license, ID Card
+  - Namibia: Driving license
+  - North Macedonia: Passport
+  - Pakistan: Driving license
+  - Peru: Driving license, Residence permit
+  - Republic of Kosovo: Driving license, Passport
+  - Russian Federation: Conscription certificate
+  - Saint Kitts and Nevis: Passport
+  - Sao Tome and Principe: Passport
+  - Saudi Arabia: Passport
+  - Sierra Leone: ID Card
+  - Slovakia: Passport
+  - Sweden: Driving license
+  - United Kingdom of Great Britain and Northern Ireland: Passport, Residence permit
+  - United States of America: Driving license (Mississippi, Tennessee, West Virginia), diplomatic ID card
+  - Vanuatu: Residence permit
+  - Yemen: Driving license, Passport
+
+* Renamed/removed document types:
+  - rus.id.military.type1, rus.id.military.type6 and rus.id.military.type7 were merged into rus.id.military.type1
+
+* Now 2962(+65) document types supported in total with 4672(+99) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.5.0
+
+* Reduced memory consumption by 17% when recognizing Russian Federation national passports
+* Reduced memory consumption by 10-15% in other modes
+* The text detector is now 4.6-bit and 10% faster
+* Added a new recognition mode for the Russian national passport: in addition to passport recognition, the holder's face is matched with the photo in the passport when taking a selfie with the document, and the passport can also be recognized in a mirrored orientation
+* Moderately improved recognition quality of handwritten texts in Russian
+* Significantly improved the recognition quality of Russian vehicle registration certificates; Added support for new fields; Overall frame recognition speed has been increased by more than 2 times
+* Moderately improved recognition quality for printed registrations in a single paragraph; Moderately improved recognition for handwritten registrations; Enhanced detection of printed stamps, resulting in fewer rejects for the new type of stamps with a lot of blank space
+* Field search has become slightly faster, and the search quality has improved for Russian driver's licenses and national Russian passports
+* The footprint of the library has been reduced by 5%
+* Slightly improved document search speed
+
+* Significantly improved recognition of documents:
+  - Belgium: Driving license
+  - Korea, Republic of: Driving license
+  - Russian Federation: Health record, Vehicle registration certificate
+  - Spain: Residence permit
+  - United Arab Emirates: Driving license
+
+* Moderately improved recognition of documents:
+  - Brazil: ID card
+  - Israel: Passport, Driving license
+  - Kazakhstan: Driving license
+  - New Zealand: Driving license
+  - Russian Federation: national passport, Divorce certificate, Marriage certificate, SNILS, Paternity certificate, Birth certificate, Driving license
+  - Ukraine: National passport
+
+* New ID document types added, which were not supported previously:
+  - Argentina: Driving license (Buenos Aires, La Pampa, Salta, Santa Fe)
+  - Asia-Pacific Economic Cooperation: ID Card
+  - Belize: Border crossing card
+  - Bhutan: Residence permit
+  - Bosnia and Herzegovina: Medcard
+  - Brazil: Employment record
+  - Canada: Emergency travel document, ID Card (Newfoundland and Labrador)
+  - France: Boating license
+  - India: Voter card
+  - Iran (Islamic Republic of): military ID card, veterinary ID card
+  - Korea, Republic of: Boating license
+  - Libya: ID Card
+  - Mexico: Driving license (Guanajuato, México), professional ID card
+  - Russian Federation: Conscription certificate, Firearm permit, International driving license, Military deferment certificate
+  - Serbia: Residence permit
+  - Thailand: Residence permit, Work permit
+
+* New document subtypes added:
+  - Algeria: ID Card
+  - Argentina: Driving license (Neuquén), ID Card
+  - Australia: ID Card (Tasmania)
+  - Bolivia (Plurinational State of): ID Card
+  - Brazil: doctor ID card
+  - Canada: Driving license (Northwest Territories), ID Card (British Columbia, Prince Edward Island), Passport, Visa
+  - China: Mainland travel permit
+  - Czechia: Residence permit
+  - Equatorial Guinea: Passport
+  - Ethiopia: ID Card
+  - France: Residence permit
+  - Germany: ID Card, Residence permit
+  - Greece: Passport
+  - Japan: Visa
+  - Jordan: Driving license, ID Card
+  - Kenya: ID Card
+  - Lao People's Democratic Republic: ID Card
+  - Liechtenstein: ID Card
+  - Lithuania: Driving license, ID Card
+  - Macao: ID Card
+  - Malaysia: Residence permit
+  - Mexico: Driving license (Baja California Sur, Jalisco, Nuevo León, Puebla, Quintana Roo, Veracruz, Zacatecas)
+  - Moldova, Republic of: ID Card
+  - Mongolia: Passport
+  - Montenegro: ID Card
+  - Morocco: ID Card
+  - Netherlands, Kingdom of the: ID Card, Passport
+  - Nigeria: ID Card
+  - Panama: ID Card
+  - Portugal: ID Card
+  - Russian Federation: Refugee ID
+  - Saudi Arabia: Residence permit
+  - Thailand: Driving license
+  - United States of America: Driving license (North Carolina, New Jersey, New Mexico, South Dakota, Virgin Islands, Washington), Passport, Visa
+  - Venezuela (Bolivarian Republic of): Driving license
+  - Viet Nam: ID Card
+  - Zimbabwe: Driving license
+
+
+* Renamed/removed document types:
+  - tha.id.type2 was renamed to tha.rp.type1
+  - bhr.passport.type1 was divided into two types: bhr.passport.type1 and bhr.passport.type3
+
+* Now 2897(+107) document types supported in total with 4573(+219; and we excluded 118 ‘tracked’ templates from the count, as they serve a utilitarian purpose) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.4.1
+
+* Fixed potential incompatibility of recent optimizations related to the use of AVX instructions for a number of CPUs that do not support AVX or SSE4.
+
+* New ID document types added, which were not supported previously:
+  - Dominica: Tax identification
+
+* New document subtypes added:
+  - Bulgaria: ID card
+  - United States of America: Driving license (Colorado)
+
+* Now 2790(+3) document types supported in total with 4472(+5) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.4.0
+
+* Improved recognition of Urdu, Greek, Arabic, and Hebrew languages
+* Improved faces comparison quality
+* Significantly improved Russian national passport registration stamp recognition and reduced memory consumption
+* Significantly improved Russian handwritten national passport recognition quality
+* Significantly accelerated stamps detection for the ‘rus.passport.stamps’ type
+* Accelerated text detection by 20%
+* Accelerated real, 8-bit and 4.6-bit convolutional neural networks on x86_64 processors with AVX by 1.8 times
+
+* Significantly improved recognition of documents:
+  - Algeria: ID Card, Passport
+  - Angola: Driving license, ID Card, Passport, Residence permit
+  - Bangladesh: ID Card
+  - Benin: ID Card, Passport
+  - Botswana: ID Card
+  - Bulgaria: ID Card
+  - Burkina Faso: ID Card
+  - Burundi: Driving license, ID Card, Passport
+  - Cameroon: ID Card
+  - Comoros: Passport
+  - Congo, Democratic Republic of the: Driving license, ID Card, Passport
+  - Congo: ID Card
+  - Croatia: Driving license
+  - Egypt: Residence permit
+  - Equatorial Guinea: ID Card
+  - Eswatini: ID Card, Passport
+  - Gabon: ID Card
+  - Ghana: Driving license, ID Card, Passport
+  - Iceland: Driving license
+  - Iran (Islamic Republic of): ID Card
+  - Kenya: ID Card
+  - Kuwait: ID Card
+  - Lesotho: ID Card
+  - Liberia: ID Card
+  - Libya: Passport
+  - Morocco: Driving license, ID Card
+  - Mozambique: ID Card
+  - Namibia: ID Card, Passport
+  - Nigeria: ID Card, Passport
+  - Oman: Driving license
+  - Rwanda: Residence permit
+  - Seychelles: ID Card
+  - Somalia: Driving license, ID Card, Passport
+  - South Africa: ID Card
+  - Sudan: Driving license, ID Card
+  - Sweden: Passport
+  - Tanzania, United Republic of: Driving license, ID Card, Passport
+  - Thailand: ID Card
+  - Togo: ID Card
+  - Tunisia: Driving license
+  - Uganda: ID Card, Passport
+  - Uruguay: ID Card
+  - Zimbabwe: Driving license
+
+* Moderately improved recognition of documents:
+  - Armenia: Driving license
+  - Bahrain: Passport
+  - Cameroon: Passport
+  - Egypt: Driving license
+  - Iran (Islamic Republic of): Passport
+  - Italy: Passport
+  - Latvia: Driving license
+  - Lebanon: Passport
+  - Mauritania: ID Card
+  - Morocco: Passport
+  - Qatar: Passport
+  - Rwanda: ID Card
+  - South Africa: Driving license
+  - Sudan: Passport
+  - Tunisia: Passport
+  - Viet Nam: Passport
+  - Zambia: ID Card
+  - Zimbabwe: Passport
+
+* New ID document types added, which were not supported previously:
+  - Iran (Islamic Republic of): Residence permit
+  - Russian Federation: foreigner ID card, stateless person ID, Large family certificate
+  - Türkiye: military ID card
+  - United Kingdom of Great Britain and Northern Ireland: Seafarers identity document, Voter card
+  - United Nations Interim Administration Mission in Kosovo: Driving license, ID Card
+  - United Nations: Passport
+  - UNHCR: Driving license, ID card
+  - United States of America: transportation ID
+  - Uruguay: diplomatic ID card
+
+* New document subtypes added:
+  - Australia: Driving license, ID Card (Tasmania)
+  - Brazil: Vehicle registration certificate
+  - Burundi: Driving license, ID Card
+  - Croatia: Driving license
+  - Denmark: Passport
+  - France: Residence permit
+  - Iceland: ID Card
+  - Iraq: ID Card
+  - Israel: military ID card
+  - Mauritania: Passport
+  - Mauritius: ID Card
+  - Pakistan: Driving license
+  - Philippines: Driving license, ID Card
+  - Russian Federation: military ID card
+  - Rwanda: Passport
+  - Somaliland: Passport
+  - Spain: Driving license
+  - Suriname: Passport
+  - Sweden: Driving license, ID Card
+  - Switzerland: Residence permit
+  - Thailand: Passport
+  - Türkiye: ID Card, Residence permit
+  - Uganda: Driving license
+  - United Arab Emirates: ID Card
+  - United States of America: Driving license (American Samoa, California, Colorado, District of Columbia, Guam, Idaho, Michigan, New Jersey, North Dakota, Nebraska, Vermont)
+  - Uruguay: Driving license
+  - Yemen: ID Card
+
+* Renamed/removed document types:
+  - usa.drvlic.al.type4 was renamed to usa.drvlic.al.type3
+  - tza.id.type3 was renamed to tza.id.type2
+  - zwe.drvlic.type2 was removed, because it's zwe.id.type1
+
+* Now 2787(+78) document types supported in total with 4467(+162) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.3.0
+
+* Added REST API support
+* Significantly improved the ‘any’ modes for mobile cases
+* Added templates attribute ‘n90CCWrotations’ which indicates how many 90 degree rotations need to be made to bring the document into the correct orientation
+
+* Significantly improved recognition of documents:
+  - Albania: Driving license
+  - Angola: Passport
+  - Antigua and Barbuda: ID Card
+  - Bangladesh: Passport
+  - Belgium: Passport
+  - Benin: Passport
+  - Bolivia (Plurinational State of): Residence permit
+  - Brazil: Residence permit
+  - Croatia: Driving license
+  - Cuba: ID Card
+  - Cyprus: Passport
+  - Equatorial Guinea: Passport
+  - Estonia: Driving license
+  - Greece: Driving license
+  - Iceland: Driving license
+  - Kazakhstan: ID Card
+  - Lao People's Democratic Republic: Passport
+  - Lithuania: ID Card
+  - Malta: Driving license, ID Card
+  - Mexico: Driving license
+  - Peru: ID Card
+  - Philippines: Passport
+  - San Marino: Driving license
+  - Serbia: Passport
+  - Singapore: ID Card
+  - Slovakia: Passport
+  - Türkiye: ID Card, Seafarers identity document
+  - Uzbekistan: Passport
+
+* Moderately improved recognition of documents:
+  - Austria: Residence permit
+  - Brazil: Passport
+  - Estonia: Passport
+  - Greece: ID Card
+  - Haiti: Passport
+  - Korea, Republic of: Driving license, Passport
+  - Latvia: Driving license
+  - Mexico: Passport
+  - Moldova, Republic of: Passport
+  - Netherlands, Kingdom of the: Passport
+  - North Macedonia: ID Card
+  - Norway: Driving license
+  - Palestine, State of: Passport
+  - Paraguay: Passport
+  - Portugal: Driving license, Passport
+  - Russian Federation: national Passport registration stamp, secondary national Passport pages, STS, SNILS
+  - Spain: Passport, Driving license
+  - Sri Lanka: Passport
+  - Türkiye: Driving license
+  - United States of America: Driving license
+  - Zambia: Passport
+
+* New ID document types added, which were not supported previously:
+  - African Development Bank: Passport
+  - Anguilla: Driving license, Tax identification, Voter card
+  - Antigua and Barbuda: Seafarers identity document
+  - Brazil: doctor ID card
+  - Comoros: Residence permit
+  - Egypt: Visa
+  - Eritrea: ID Card
+  - Faroe Islands: Driving license
+  - Finland: Medcard
+  - Israel: Border crossing card
+  - Liberia: Seafarers identity document
+  - Libya: Driving license
+  - Madagascar: Visa
+  - Mozambique: Visa
+  - New Caledonia: Driving license
+  - Norway: builder ID card, military ID card
+  - Organisation of Eastern Caribbean States(OECS): Passport
+  - Panama: Seafarers identity document
+  - Philippines: Seafarers identity document
+  - Poland: Border crossing card, Seafarers identity document
+  - Sierra Leone: ID Card
+  - Somaliland: Driving license, Passport
+  - Spain: military Driving license, military ID card
+  - Western Sahara: ID Card
+
+* New document subtypes added:
+  - Argentina: ID Card
+  - Armenia: Residence permit
+  - Aruba: Driving license
+  - Australia: ID Card (Queensland, South Australia), Residence permit
+  - Austria: Passport, Residence permit
+  - Bahamas: Seafarers identity document
+  - Bahrain: ID Card
+  - Belarus: Passport registration stamp
+  - Belize: Driving license
+  - Bolivia (Plurinational State of): ID Card
+  - Botswana: ID Card
+  - Brazil: military ID card, professional ID card, ID Card
+  - Bulgaria: Driving license, Residence permit
+  - Cambodia: Driving license
+  - China: ID Card, Passport
+  - Colombia: ID Card, Residence permit
+  - Costa Rica: Passport
+  - Croatia: ID Card
+  - Czechia: Driving license
+  - Dominican Republic: ID Card
+  - Ecuador: Driving license, ID Card
+  - Egypt: Driving license
+  - Equatorial Guinea: ID Card
+  - Estonia: Driving license
+  - Ethiopia: ID Card
+  - France: Driving license
+  - Georgia: Residence permit
+  - Germany: Driving license
+  - Ghana: Driving license
+  - Guatemala: Driving license
+  - Guinea-Bissau: ID Card, Passport
+  - Honduras: Driving license, Passport
+  - Hungary: Driving license, Residence permit
+  - Indonesia: ID Card, Passport
+  - Ireland: Driving license, ID Card, Residence permit
+  - Israel: Driving license
+  - Italy: Driving license, Residence permit
+  - Kenya: Passport
+  - Kuwait: Driving license, ID Card
+  - Latvia: Driving license
+  - Lithuania: Driving license
+  - Malawi: Driving license, Passport
+  - Malaysia: Driving license, ID Card
+  - Malta: ID Card
+  - Mexico: Driving license (Chiapas, Sinaloa)
+  - Moldova, Republic of: ID Card
+  - Mongolia: ID Card
+  - Morocco: Residence permit
+  - Netherlands, Kingdom of the: Driving license
+  - Nigeria: Driving license, Voter card
+  - North Macedonia: Driving license
+  - Norway: Driving license
+  - Pakistan: Driving license
+  - Panama: Passport
+  - Papua New Guinea: Driving license
+  - Paraguay: Driving license, Passport
+  - Philippines: ID Card
+  - Poland: Passport, Residence permit
+  - Portugal: Driving license
+  - Saudi Arabia: ID Card
+  - Sierra Leone: Driving license
+  - Sint Maarten (Dutch part): Driving license
+  - Slovenia: Driving license, Residence permit
+  - Somalia: Driving license, ID Card
+  - Sudan: Passport
+  - Syrian Arab Republic: Passport
+  - Timor-Leste: ID Card
+  - United States of America: Driving license (American Samoa, Arizona, Oklahoma, Wisconsin)
+  - Uruguay: Passport
+
+* Renamed/removed document types:
+  - est.passport.type1 and est.passport.type4 were merged into est.passport.type1
+  - est.passport.type6 was renamed to est.passport.type4
+  - isr.rp.type2 was removed, because it's pse.id.type1
+  - mex.drvlic.df.type1 and mex.drvlic.df.type5 were merged into mex.drvlic.df.type1
+  - mex.drvlic.df.type7 was renamed to mex.drvlic.df.type5
+  - mex.drvlic.em.type6 was renamed to mex.drvlic.cs.type3
+  - mex.drvlic.pu.type1 and mex.drvlic.pu.type3 were merged into mex.drvlic.pu.type1
+  - mex.drvlic.pu.type6 was renamed to mex.drvlic.pu.type3
+  - phl.id.type14 was renamed to phl.seafarers_identity_document.type1
+  - phl.id.type27 was renamed to phl.id.type14
+  - usa.drvlic.fl.type5 was removed, because it's a fake type
+
+* Now 2709(+142) document types supported in total with 4305(+258) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.2.0
+
+* Improved Korean language recognition
+* Moderately improved face matching
+
+* Significantly improved recognition of documents:
+  - Australia: ID card, Passport
+  - Bahamas: Driving license
+  - Belize: ID card
+  - Benin: Passport
+  - Bermuda: Driving license
+  - Botswana: ID card
+  - Brunei Darussalam: Passport
+  - Canada: Driving license
+  - Croatia: ID card
+  - Djibouti: ID card
+  - Ecuador: ID card
+  - El Salvador: Driving license
+  - Estonia: ID card
+  - Eswatini: Driving license, Passport
+  - Gabon: ID card
+  - Iceland: Passport
+  - Ireland: ID card
+  - Kyrgyzstan: Passport
+  - Liberia: ID card
+  - Monaco: Passport
+  - Montenegro: ID card
+  - Myanmar: ID card
+  - Nigeria: ID card, Passport
+  - Paraguay: Driving license, Passport
+  - Poland: Residence permit
+  - Samoa: Passport
+  - Sao Tome and Principe: Passport
+  - Seychelles: ID card
+  - Suriname: Driving license
+  - Taiwan: ID card
+  - Uganda: Driving license
+  - Uruguay: ID card
+  - Viet Nam: Passport
+
+
+* Moderately improved recognition of documents:
+  - Australia: Driving license, Residence permit
+  - Belarus: ID card
+  - Bosnia and Herzegovina: Passport
+  - Botswana: Driving license
+  - Brunei Darussalam: Driving license
+  - Canada: Passport
+  - Chile: Passport
+  - Equatorial Guinea: Passport
+  - Gambia: ID card
+  - Greece: Passport
+  - Guinea-Bissau: Passport
+  - Jamaica: Passport
+  - Kenya: ID card
+  - Lebanon: Passport
+  - Mongolia: ID card
+  - North Macedonia: ID card
+  - Pakistan: Passport
+  - Peru: Passport
+  - Poland: Driving license
+  - Romania: Residence permit
+  - Russia: national Passport
+  - Slovenia: Residence permit
+  - Sweden: Driving license
+  - Taiwan: Driving license
+  - Tanzania: Driving license
+  - Timor-Leste: Passport
+  - Togo: Passport
+  - Trinidad and Tobago: Driving license
+  - Ukraine: handwritten national Passport
+  - United Kingdom of Great Britain and Northern Ireland: Driving license
+  - Venezuela: Passport
+
+* New ID document types added, which were not supported previously:
+  - Greece: police ID card
+  - Lebanon: military ID card
+  - Togo: military ID card
+  - Türkiye: diplomatic ID card
+  - United States of America: diplomatic Driving license
+
+* New document subtypes added:
+  - Australia: ID card (Northern Territory)
+  - Burkina Faso: ID card
+  - Burundi: Passport
+  - Canada: ID card (Alberta)
+  - China: Home Return permit
+  - Greece: ID card
+  - Hungary: Residence permit
+  - Iraq: Passport
+  - Ireland: ID card
+  - Pakistan: Passport
+  - Russia: national Passport registration stamp, where address is not separated by fields but written in the whole paragraph and handwritten national Passport registration stamp
+  - Sweden: ID card
+  - Switzerland: Residence permit
+  - United States of America: Driving license (Idaho, Utah, Virginia)
+
+* Renamed/removed document types:
+  - chn.passport.type2 was removed, because it's mac.passport.type2
+  - chn.passport.type5 was removed, because it's mac.passport.type1
+  - chn.passport.type6 was renamed to chn.passport.type2
+  - mex.drvlic.qr.type10 was removed, because it's mex.drvlic.gr.type22
+  - mex.drvlic.qr.type21 was renamed to mex.drvlic.qr.type10
+  - lva.passport.type3 and lva.passport.type4 were merged into lva.passport.type3
+  - vnm.passport.type1 was split into 3 types: vnm.passport.type1, vnm.passport.type2, vnm.passport.type3
+
+
+* Now 2567(+19) document types supported in total with 4047(+40) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.1.2
+
+Warning! Interface change in se::common library (class OcrString). Access to detailed representation of OcrString as a sequence of OcrChars (i.e. the following methods: GetChars(), GetChar(), GetMutableChar(), SetChar(), AppendChar() and C++ access to OcrChars via operator[]) now requires preliminary unpacking the internal structure using UnpackChars() method. Mutable access also requires committing changes using RepackChars() method.
+
+* Improved session stopping decision making for cases when all document fields are optional
+* Improved document detection for ‘any’ modes
+* Added page numbers extraction for all types of Russian passport stamps
+
+* Significantly improved:
+  - Armenia: Driving license, ID card, Residence permit
+  - Australia: Electronic Driver license (New South Wales)
+  - Azerbaijan: Passport, Residence permit
+  - Belarus: Driving license, ID card, Residence permit, Vehicle registration certificate
+  - Canada: Residence permit
+  - Spain: Driving license, ID card
+  - Iraq: Passport
+  - Kazakhstan: Driving license
+  - Moldova: Residence permit
+  - Norway: ID card
+  - Pakistan: Passport
+  - Russia: Migration card
+  - Tajikistan: ID card
+  - Uganda: Driving license
+  - Uzbekistan: ID card, Residence permit
+  - Vietnam: Passport
+
+* Moderately improved:
+  - Canada: Passport
+  - Switzerland: Residence permit
+  - Algeria: Passport
+  - Kyrgyzstan: ID card
+  - Russia: Passport international, Death certificate, Residence permit
+  - Tajikistan: Driving license
+  - Uganda: Passport
+
+* New ID document types added, which were not supported previously:
+  - Albania: Residence permit
+  - Antigua and Barbuda: Tax identification
+  - Brazil: Refugee ID
+  - Japan: Landing permission
+  - Lao People's Democratic Republic: military ID card
+  - Panama: Work permit
+  - Ukraine: Death certificate, Divorce certificate
+  - Uzbekistan: Birth certificate
+
+* New document subtypes added:
+  - Bahrain: Passport
+  - Canada: Passport
+  - Democratic Republic of the Congo: ID card
+  - Greece: Driving license
+  - Poland: Residence permit
+  - Türkiye: Residence permit
+  - United States of America: Driving license (New York)
+
+* Renamed/removed document types:
+  - blr.passport.internal.type1 was merged with blr.passport.type1, now it’s all blr.passport.type1
+
+* Now 2548(+17) document types supported in total with 4007(+69) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.1.1
+
+* Added ability to invert input image
+
+* Significantly improved:
+  - Honduras: Passport
+  - Liechtenstein: ID card
+  - Mauritius: Passport
+  - Democratic People's Republic of Korea: Passport
+  - Ukraine: Residence permit
+  - Rwanda: Passport
+  - Slovenia: Driving license
+  - Cuba: Passport
+  - Botswana: Passport
+  - Mauritania: Passport
+  - Mongolia: Passport
+  - Dominican Republic: Passport
+  - Congo: Passport
+  - Guinea-Bissau: Passport
+  - Chad: Passport
+  - Netherlands: Passport
+  - Bolivia: Passport
+  - Benin: Passport
+  - Portugal: Residence permit
+  - Suriname: Passport
+  - Russia: Previous passports stamp
+  - Haiti: Passport
+  - El Salvador: Passport
+  - Uganda: Passport
+  - Ethiopia: Passport
+  - Democratic Republic of the Congo: Passport
+  - Lao: Passport
+  - Mali: Passport
+  - Saint Kitts and Nevis: Passport
+  - Mauritius: ID card
+  - Philippines: Work permit
+  - Venezuela: Voter card
+  - Cyprus: Passport
+  - Côte d'Ivoire: Passport
+  - Russia: Migration card
+  - Tunisia: Passport
+
+* Moderately improved:
+  - Bermuda: Driving license
+  - China: Passport
+  - Mozambique: Passport
+  - Afghanistan: Passport
+  - Estonia: Passport
+  - Oman: Passport
+  - Russia: Visa
+  - Yemen: Passport
+  - Moldova: Passport
+  - Türkiye: Passport
+  - Luxembourg: Residence permit
+  - Russia: Divorce certificate
+  - Zambia: Driving license
+  - Switzerland: Passport
+  - Egypt: Passport
+  - Qatar: Passport
+
+* New ID document types added, which were not supported previously:
+  - Kenya: Medcard
+  - Liberia: Voter card
+  - United States of America: Firearm permit (Arizona, Georgia, Indiana, Minnesota, New Hampshire, New Jersey, New Mexico, Nevada, Virginia)
+
+* New document subtypes added:
+  - Ecuador: Passport
+  - Ethiopia: ID card
+  - Indonesia: Passport
+  - Saint Lucia: Passport
+  - Moldova: ID card
+  - Mali: ID card
+  - Pakistan: Driving license
+  - Panama: Residence permit
+  - Palestine: Passport
+  - Uganda: Passport
+
+* Now 2531(+20) document types supported in total with 3938(+31) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.1.0
+
+* Added RFID chip presence info for passports
+* Improved MRZ recognition on all passports (significantly improved)
+* Faster Russian passport recognition (15% faster on x86, 10% faster on ARM)
+* Added Ukrainian national passport’s perforated number recognition
+* Improved Russian registration stamp recognition (moderately improved)
+* Improved Russian national passport recognition (moderately improved)
+* Improved Brazilian ID card (moderately improved)
+* Reduced wrong type detection errors for Russian certificates
+* Improved French ID cards recognition (moderately improved) and Data Matrix code recognition from the back side of the new ID card (significantly improved)
+* Improved and faster document detection for ‘any’ modes
+
+Significantly improved:
+  *Monaco: Passport
+  *Albania: ID card
+  *Eswatini: Passport
+  *Sweden: Residence permit
+  *Singapore: ID card
+  *Armenia: Residence permit
+  *Luxembourg: ID card
+  *Venezuela: ID card
+
+Moderately improved:
+  *Brazil: Residence permit
+  *Australia: ID card
+  *North: Macedonia ID card
+  *Czechia: ID card
+  *Moldova: ID card
+  *Kyrgyzstan: Driving license
+  *Moldova: Driving license
+  *Spain: Residence permit
+  *Bangladesh: Passport
+  *Cameroon: ID card
+  *Kyrgyzstan: ID card
+  *Brazil: Passport
+
+* New ID document types added, which were not supported previously:
+  - Bhutan: Voter card
+  - Central African Republic: ID card
+  - Kazakhstan: Birth certificate, Death certificate, Marriage certificate
+  - Kyrgyzstan: Adoption certificate, Birth certificate, Death certificate, Marriage certificate, Divorce certificate, Name change certificate, Paternity certificate
+  - Moldova: Birth certificate, Divorce certificate, Marriage certificate
+  - Mozambique: Voter card
+  - United States of America: Firearm permit (North Dakota)
+  - Vanuatu: Residence permit
+
+* New document subtypes added:
+  - Australia: Driving license (Victoria)
+  - Bangladesh: Driving license
+  - Belize: Passport
+  - Switzerland: Driving license
+  - China: Passport
+  - Finland: ID card
+  - Kyrgyzstan: Driving license
+  - Korea: Residence permit
+  - Moldova: Passport
+  - Mongolia: Driving license
+  - United States of America: Driving license (Utah)
+
+* Now 2511(+27) document types supported in total with 3907(+45) unique templates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 2.0.0
+
+* New system of document templates description that allows to detect the document type faster with higher precision
+* Package size reduced by 15%
+* RAM consumption was reduced by 30% in ‘any’ mode, which includes all identity documents
+* Added delayed initialization that allows to minimize RAM consumption when the target set of documents known in advance, works for lazy and non-lazy initialization.
+* Improved Russian internal passport recognition:
+  - fixed 15% of the recognition errors on the main fields
+  - significant improvement of the secondary passport pages detection quality (fixed 60% of the detection errors) and 7 times faster detection
+  - fixed 5% of the recognition errors on the registration stamp
+* Fixed 7% of the recognition errors on the Russian VRC (СТС)
+
+* Smart Code Engine: New independent SDK Smart Code Engine with optimized library size, for instance, barcode library size reduced by 35%. The Smart ID Engine SDK continues to work as before.
+
+* New ID document types added, which were not supported previously:
+  - Armenia: Birth certificate, Marriage certificate
+  - Azerbaijan: Death certificate, Divorce certificate
+  - Burundi: ID card
+  - Belarus: Death certificate, Marriage certificate
+  - Brazil: police ID card
+  - China: Residence permit
+  - German: military ID card
+  - Georgia: Birth certificate
+  - Israel: military ID card
+  - Mexico: military ID card
+  - Niger: ID card
+
+* New document subtypes added:
+  - Belgium: Driving license, Passport
+  - Barbados: ID card
+  - Switzerland: ID card
+  - Costa Rica: Residence permit
+  - Algeria: Driving license, ID card
+  - Ecuador: ID card
+  - Ethiopia: Driving license
+  - Finland: ID card
+  - France: Residence permit
+  - United Kingdom of Great Britain and Northern Ireland: Driving license
+  - Georgia: Driving license
+  - Hungary: ID card, Passport, Residence permit
+  - Cambodia: Driving license, Passport
+  - Mexico: ID card, Driving license (Guerrero)
+  - Mongolia: Driving license
+  - Mozambique: Driving license
+  - Pakistan: Driving license
+  - Panama: ID card
+  - Philippines: ID card
+  - Romania: Residence permit
+  - Russian Federation: Refugee ID
+  - Sierra Leone: Driving license
+  - San Marino: Passport
+  - Suriname: Driving license
+  - Slovakia: ID card
+  - Tajikistan: Passport
+  - Turkey: Driving license, Passport, Work permit
+  - United States of America: Driving license (California, Washington)
+  - Viet Nam: Driving license
+
+* Now 2484(+57) document types supported in total with 3862(+159) unique templates
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.13.0
+
+* Improved ID documents detection on a complex background
+* Improved French and UK residence permit recognition
+* Improved OCR of Latin-based script languages
+* Improved OCR of all document fields in general
+* Improved Russian internal passport recognition
+* Improved Russian internal passport stamp detection; sorted output by landing; added the last stamp marking
+* Faster configuration: 30% faster in lazy mode, 10% faster in non-lazy mode
+* Added session option 'MRZCountriesListAddition' which allows to add custom issuer codes for MRZ fields parsing
+* Changed folders structure for React and Flutter modules (more info in doc/UPDATE_INSTRUCTIONS.MD)
+
+* Smart Code Engine: Significant acceleration of the worst case recognition scenario of PDF417 and QR codes without quality loss
+* Smart Code Engine: Improved QR codes detection
+
+* New ID document types added, which were not supported previously:
+  - Australia: Electronic Driver license (New South Wales)
+  - France: Military identity document
+  - India: Driving licence (Chandigarh, Manipur)
+  - Netherlands: Aircrew member certificate
+  - New Zealand: Visa
+  - Philippines: Visa
+  - Palau: ID card
+  - Kosovo: Residence permit
+  - Singapore: Residence permit
+  - Tajikistan: Residence permit
+  - Turkey: Seafarers identity document
+  - United States of America: Firearm permit (Mississippi)
+
+* New document subtypes added:
+  - Angola: ID card
+  - Australia: Passport
+  - Brazil: ID card
+  - Brunei Darussalam: ID card
+  - Canada: Driving licence (Northwest Territories)
+  - Switzerland: Passport
+  - Dominica: Passport
+  - Ghana: ID card
+  - India: Driving licence (Jammu and Kashmir, Nagaland, West Bengal)
+  - Ireland: Residence permit
+  - Cambodia: ID card
+  - Lebanon: Driving licence
+  - Macao: ID card
+  - Republic of Moldova: ID card, Residence permit
+  - Mexico: Driving licence (Baja California, Chiapas, Durango, Mexico, Guerrero, Hidalgo, Michoacan, Morelos, Oaxaca, Puebla, Queretaro, San Luis Potosi, Sonora, Tlaxcala, Tamaulipas, Veracruz)
+  - Myanmar: Driving licence, ID card
+  - Mozambique: Passport
+  - Netherlands: Residence permit
+  - Nepal: Passport
+  - Nauru: Passport
+  - Pakistan: Driving licence
+  - Poland: Passport
+  - State of Palestine: Driving licence
+  - Qatar: Driving licence
+  - Rwanda: Passport
+  - Sudan: Driving licence, ID card
+  - El Salvador: ID card, Passport, Residence permit
+  - Slovakia: ID card
+  - Seychelles: Passport
+  - Syrian Arab Republic: Driving licence
+  - Thailand: Passport
+  - Uruguay: Passport
+  - United States of America: Driving licence (District of Columbia, Tennessee), Military identity document, Passport, Visa
+  - Saint Vincent and the Grenadines: Passport
+  - Interpol: Passport
+  - South Africa: Passport
+  - Zimbabwe: Passport
+
+* Now 2427(+125) document types supported in total with 3703(+166) unique templates
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.12.1
+
+* Added Wasm compression mode, with 4x reduction of effective binary download size
+* 4x speed increase for Wasm library for SIMD-enabled browsers
+* Improved document type identification precision and speed for "AnyDoc" mode and other autoselection modes
+* Reduced library size (at least 5% across various platforms)
+
+* Improved France CNIE ID card recognition
+* Added stamp type identification  for Russian internal passport
+* Improved Russian internal passport registration stamp recognition
+* Improved OCR for georgian, armenian, thai and greek languages
+
+* Smart Code Engine: Improved cardholder's name recognition for debit and credit cards
+* Smart Code Engine: Improved detection of barcodes in focused mode
+
+* Smart Document Forensics: Improved optical range analysis of document templates
+
+* New ID document types added, which were not supported previously:
+  - Azerbaijan: Seafarers identity document
+  - Bahamas: Seafarers identity document
+  - Brazil: Lawyer License, Military identity document, Professional identity document
+  - Estonia: Diplomatic identity document
+  - European Union: Passport (EUE)
+  - Finland: Seafarers identity document
+  - France: Professional identity document (BTP)
+  - Ireland: Visa
+  - Israel: Immigration Certificate
+  - Jordan: Military identity document
+  - Japan: Visa
+  - Lithuania: Border crossing card
+  - Taiwan: Medcard
+  - Northen Cyprus: Driving licence, Passport
+
+* New document subtypes added:
+  - United Arab Emirates: Passport
+  - Australia: ID card (Victoria), Residence permit
+  - Austria: Passport
+  - Azerbaijan: Driving licence
+  - Benin: Passport
+  - Bahamas: Passport
+  - Cameroon: Passport
+  - India: Driving licence (Chhattisgarh, Jharkhand, Delhi, Kerala)
+  - Sweden: ID card
+  - Fiji: Passport
+  - France: Medcard
+  - United Kingdom of Great Britain and Northern Ireland: Residence permit
+  - Georgia: Passport
+  - Ghana: Voter card
+  - Iraq: Driving licence, Residence permit
+  - Israel: Residence permit
+  - Jordan: Military identity document, ID card
+  - Kenya: Passport
+  - Lithuania: Residence permit
+  - Luxembourg: ID card
+  - Madagascar: Passport
+  - Maldives: Work permit
+  - Mexico: Driving licence(Guerrero, Nuevo León)
+  - Mauritania: ID card
+  - Malaysia: Driving licence, Residence permit
+  - Nigeria: Voter card
+  - Pakistan: Driving licence
+  - Philippines: ID card
+  - Poland: Driving licence
+  - Slovenia: ID card
+  - United States of America: Driving licence (Alabama)
+  - Yemen: Driving licence, ID card, Passport
+
+* Now 2302(+104) document types supported in total with 3537(+152) unique templates
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.12.0
+
+* AnyDoc mode added for automatic selection between any passports, ID cards, 
+  driving licences or residence permits of all supported countries (1834 types overall)
+* Improved document detection and location accuracy
+* Improved recognition accuracy for Latin-based and Cyrillic-based languages
+
+* Smart Code Engine: new MRZ scanning technology with x3 accuracy improvement without loss of speed
+* Smart Code Engine: improved barcode scanning quality
+* Smart Code Engine: MicroQR scanning
+* Smart Code Engine: expanded, limited, and omnidirectional GS1 DataBar scanning
+
+* Docker-based simplified integration option added for server SDKs
+
+* New ID document types added, which were not supported previously:
+  - Afghanistan Driving licence
+  - Australia Firearm permit
+  - Bolivia Residence permit
+  - Belize ID card
+  - Brazil Visa
+  - Canada Tax identification
+  - Cameroon Vaccination card
+  - UK Citizencard
+  - Guinea Driving licence
+  - Greece Military ID card
+  - Israel Residence permit
+  - Kenya Military ID card
+  - Madagascar ID card
+  - Nigeria Voter card
+  - Peru Residence permit
+  - Philippines Medical card and Work permit
+  - Russia Refugee ID, paternity, disability, and adoption certificates
+  - Venezuela Voter card
+
+* New document subtypes added:
+  - Armenia Residence permit
+  - Australia Driving licence, ID card (Victoria)
+  - Benin ID card
+  - Belarus Passport
+  - Brazil Driving licence and Residence permit
+  - Canada ID card
+  - Côte d'Ivoire ID card
+  - Colombia Residence permit
+  - Ecuador ID card
+  - Egypt driving licence
+  - Finland Driving licence
+  - Micronesia Driving licence
+  - Ghana Driving licence and ID card
+  - Guatemala Driving licence
+  - Haiti Driving licence
+  - Hungary Residence permit
+  - India Driving licence (multiple new templates)
+  - Iraq Driving licence
+  - Ireland Driving licence
+  - Kenya ID card
+  - Lesotho Driving licence
+  - Latvia Driving licence
+  - Malaysia Residence permit
+  - Morocco Driving licence
+  - Mozambique ID card
+  - Mexico Driving licence (multiple new templates)
+  - Nigeria ID card
+  - Nepal ID card
+  - New Zealand ID card
+  - Pakistan Driving licence
+  - Peru Driving licence
+  - Philippines ID card
+  - Russia Name change certificate
+  - Sweden ID card
+  - Thailand Driving licence
+  - Turkey Residence permit
+  - Tunisia ID card
+  - Venezuela Passport
+
+* Now 2198(+148) document types in total with 3385(+229) unique templates supported
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.11.1
+
+* Restructured default callbacks for obtaining recognition results in iOS controller
+* Added option for extracting raw field images cropped from the original image
+
+* New ID document types added, which were not supported previously:
+  - Austria police ID card
+  - Denmark ID card
+  - Lebanon residence permit
+  - Morocco residence permit
+  - Marshall Islands driving licence
+  - Mongolia residence permit
+  - Montserrat driving licence
+  - Nicaragua driving licence
+  - Palau driving licence
+  - Russia temporary residence permit
+  - Rwanda residence permit
+  - Sierra Leone driving licence, tax identification and voter card
+  - El Salvador residence permit
+  - South Sudan driving licence
+  - Sao Tome and Principe ID card
+  - Turks and Caicos Islands driving licence
+  - Chad ID card and voter card
+  - Timor-Leste driving licence and ID card
+  - Tonga ID card
+  - Tuvalu driving licence
+  - Tanzania residence permit
+  - Ukraine pilot licence
+  - British Virgin Islands ID card, work permit and voter card
+  - Viet Nam residence permit
+  - Vanuatu ID card
+  - Samoa driving licence and ID card
+  - Zambia residence permit
+
+* New document subtypes added:
+  - Denmark passport and residence permit
+  - Korea passport
+  - Mexico passport and driving licence ()
+  - Sweden passport, ID card and residence permit
+  - Austria residence permit
+  - Belgium residence permit
+  - Canada driving licence (British Columbia)
+  - Honduras ID card
+  - India driving licence (Delhi, Karnataka)
+  - Morocco ID card
+  - Mexico.drvlic (Aguascalientes, Baja California Norte, 
+                   Chihuahua, Colima, Durango, Guanajuato, 
+                   Jalisco, Michoacan, Nuevo Leon, Puebla, 
+                   Tabasco, Tamaulipas, Veracruz)
+  - Mozambique ID card
+  - El Salvador driving licence
+  - Ukraine vehicle registration certificate
+  - United States of America work permit and 
+                   driving licence (Missouri, New York)
+
+* Now 2050 document types with 3156 unique templates supported
+* Other fixes and improvements
+
+
+Smart ID Engine 1.11.0
+
+* Smart Code Engine: improved bank cards accuracy for all types of bank cards
+* Smart Code Engine: improved MRZ recognition accuracy in video stream and in photos
+* Smart Code Engine: improved detection of linear barcodes
+* Smart Code Engine: improved reading accuracy for CODE39, CODE93, CODE128 and ITF
+* Smart Code Engine: improved DataMatrix scanning speed
+
+* Improved recognition accuracy for Sinhala, Hebrew, Arabic, Armenian and Georgian scripts
+* Improved recognition of Brazil ID documents
+* Improved face matching accuracy
+
+* New ID document types added, which were not supported previously:
+  - Cook Islands driving licence
+  - Armenia residence permit
+  - Benin residence permit
+  - Bonaire, Sint Eustatius and Saba driving licence and ID card
+  - Burkina Faso residence permit
+  - Bahamas residence permit
+  - Bermuda ID card, voter card, and work permit
+  - Bhutan  driving licence
+  - Botswana residence permit
+  - Congo (Democratic Republic) residence permit
+  - Congo residence permit
+  - Colombia residence permit
+  - Costa Rica residence permit
+  - Egypt residence permit
+  - Ethiopia  driving licence and ID card
+  - Fiji voter card
+  - Saint Martin (French part) driving licence
+  - Sint Maarten (Dutch part) driving licence
+  - Micronesia driving licence
+  - Gabon residence permit
+  - Gambia residence permit
+  - Guinea-Bissau driving licence and ID card
+  - Equatorial Guinea driving licence and residence permit
+  - Honduras residence permit
+  - Indonesia residence permit
+  - Iceland ID card
+  - Kenya driving licence and residence permit
+  - Cambodia residence permit and work permit
+  - Kiribati ID card
+  - Republic of Korea residence permit
+  - Lao driving licence
+  - Liberia driving licence
+  - Liechtenstein residence permit
+  - Lesotho driving licence
+  - Madagascar driving licence
+  - Maldives driving licence and work permit
+  - Namibia driving licence
+  - Niue driving licence
+  - Chad driving licence
+  - Trinidad and Tobago residence permit
+  - Taiwan driving licence
+  - Uganda residence permit
+  - Yemen ID card
+
+* New document subtypes added:
+  - Angola residence permit
+  - Australia ID card (Western Australia)
+  - Belgium passport
+  - Brazil ID card
+  - UK driving licence
+  - Iran passport
+  - Kyrgyzstan driving licence
+  - Cambodia driving licence
+  - Kuwait driving licence
+  - Morocco driving licence
+  - Nepal driving licence
+  - Philippines ID card
+  - Saudi Arabia passport
+  - Ukraine driving licence
+  - USA driving licence (Colorado, American Samoa, Northern Mariana Islands)
+
+* Now 1974 document types with 3010 unique templates supported
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.10.0
+
+* Reduced configuration size (up to 25%)
+* Improvement of recognition engine initialization and configuration speed
+* Significant improved recognition of ID documents of Brazil
+
+* Improved face matching accuracy
+* Improvement of recognition accuracy for Latin- and Cyrillic-based fields
+
+* Smart Code Engine: improved machine-readable zone (MRZ) recognition accuracy
+* Smart Document Forensics: improved content-based forensic checks for ID documents of France, Germany
+
+* New ID document types added, which were not supported previously:
+  - Isle of Man driving licence
+  - Greenland driving licence
+  - Cayman Islands driving licence
+  - Ghana voter card
+  - Grenada residence permit
+  - Madagascar residence permit
+  - Nepal driving licence
+  - Philippines residence permit
+  - Turks and Caicos Islands ID card
+  
+* New document subtypes added:
+  - Australia ID card
+  - Switzerland residence permit
+  - Democratic Republic of the Congo driving licence
+  - Colombia ID card
+  - Dominican Republic passport
+  - France driving licence
+  - UK driving licence
+  - UK provisional driving licence
+  - Georgia ID card
+  - Greece driving licence
+  - India driving licence
+  - Jamaica ID card
+  - Mexico ID card
+  - Norway driving licence
+  - Portugal residence permit
+  - Thailand passport
+  - USA driving licence (Nebraska)
+  - USA firearm permit (Florida, Illinois, Oregon, Utah)
+
+* Now 1887 document types with 2839 unique templates supported
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.9.0
+
+* Smart Code Engine: improved QR codes scanning
+* Smart Code Engine: improved AZTEC code scanning
+* Smart Code Engine: new lightweight one-dimensional barcodes scanning engine
+* Smart Code Engine: bank cards recognition speed-up with a new 8-bit inference models
+* Smart Code Engine: new iOS demo app: https://apps.apple.com/us/app/smart-code-engine/id1597490872
+* Smart Code Engine: control digit values output for MRZ recognition
+
+* Added recognition of page number and passport number on an arbitrary page of Russian national passport
+* Added support for the recognition of all visible Russian passport registration stamps
+* Improved recognition accuracy of Russian passport registration stamps
+* Improved numeric fields recognition accuracy
+* Improved recognition of the document of CIS countries
+
+* New recognition session initialization scheme, improved performance on multicore servers
+* Automatic estimation of document DPI
+* XCFramework native libraries packaging for iOS SDK
+* Extended image input interface (multiplanar YUV, extended pixel buffers)
+
+* Smart Document Forensics: ! IMPORTANT ! base forensics is now unavailable by default, 
+  to update the base forensics to v1.9.0 please contact the support team
+
+* Smart Document Forensics: additional MRZ syntax and font checks included for ID documents
+* Smart Document Forensics: new document presentation checks added for ID documents
+* Smart Document Forensics: additional document element presentation checks included for ID documents
+* Smart Document Forensics: data cross-validation checks added for ID documents of CIS countries
+* Smart Document Forensics: improved video stream liveness analysis for multiple document types, 
+                            added video stream analysis features for European ID documents
+
+* New ID document types added, which were not supported previously:
+  - Hungary address card
+  - Iran ID
+  - Malaysia residence permit
+  - Russian health permit
+  - Russian national passport - arbitrary pages
+  - Taiwan residence permit
+  - Northern Cyprus territory ID
+* New document subtypes added:
+  - Australia ID (New South Wales)
+  - Brazil ID
+  - EU medical card
+  - Hungary residence permit
+  - Kyrgyzstan passport
+  - Lithuania driving licence
+  - Monaco passport
+  - Montenegro driving licence
+  - Malaysia ID
+  - Romania driving licence
+  - Russian divorce certificate
+  - Senegal passport
+
+* Now 1856 document types with 2534 unique templates supported
+* New demo application for iOS: https://apps.apple.com/us/app/smart-engines/id1593408182
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.8.0
+
+* Smart Code Engine: new barcode scanning modes: multi-code scanning, and continuous session scanning
+* Smart Code Engine: ITF14 barcodes support
+* New WebAssembly SDK with dynamic browser features identification
+
+* Barcodes scanning implemented for all supported ID document types
+* Arabic ligatures support added
+* Tamil language OCR improvement
+* Improved OCR accuracy for multiple languages and scripts
+* Overall document layout analysis and recognition improvements
+* Improved detection and recognition of registration stamp for Russian passport
+* Significant improvement of Brazil driving licence recognition
+
+* Smart Document Forensics: new file-based forensics functionality
+* Smart Document Forensics: new bank card forensics functionality
+* Smart Document Forensics: OCR-A detection and validation for ID documents
+* Smart Document Forensics: new ID checks implemented
+
+* New ID document types added, which were not supported previously:
+  - Belarus birth certificate
+  - Palestine driving licence
+  - Russian diplomatic ID
+  - Russian tractor driving licence
+  - USA diplomatic ID
+
+* New document subtypes added:
+  - Belgium residence permit
+  - Canada residence permit
+  - Czech Republic visa
+  - German driving licence
+  - German residence permit
+  - Estonian passport
+  - Greek visa
+  - Croatian residence permit
+  - Luxembourg driving licence
+  - USA driving licence (Nevada)
+  - USA medical insurance cards (9 new templates)
+
+* Now 1834 document types with 2470 unique templates supported
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.7.0
+
+* Smart Code Engine: breakthrough 2X speed-up of freeform cards recognition
+* Smart Code Engine: new types of freeform cards are supported (including cards with split number and name)
+* Smart Code Engine: improved OCR accuracy for fields of bank cards of all types
+
+* Improved accuracy of Arabic and Cyrillic OCR
+* General improvement of ID document template parsing and recognition accuracy
+* Improved detection and recognition speed for Russian registration stamp
+* Fixed potential internal linking conflicts in static iOS binaries
+* Fixed Flutter module linking with apps using dynamic pods on iOS
+* Updated interface for face matching
+
+* Forensics: forensic fields support in plain-C interface
+* Forensics: new checks added for multiple document types, improved check validation accuracy
+* Forensics: validation of optional extra characters in Russian documents
+
+* New ID document types added, which were not supported previously:
+  - Belarus: residence permit
+  - Burundi: driving licence
+  - Egypt: vehicle registration certificate
+  - Georgia: residence permit
+  - Iceland: visa
+  - Iraq: driving licence and residence permit
+  - Mexico: residence permit
+  - Moldova: residence permit
+  - Montenegro: residence permit
+  - Russia: seafarer identity document
+  - United Arab Emirates: vehicle registration certificate
+  - United States of America: military ID card
+  - Uzbekistan: residence permit
+* New document template subtypes added:
+  - Australia: driving licence (Western Australia)
+  - Austria: residence permit and ID card
+  - Benin: ID card
+  - Brazil: residence permit
+  - Croatia: visa and ID card
+  - Dominican Republic: residence permit
+  - Estonia: visa
+  - Finland: visa
+  - France: visa
+  - Greece: residence permit
+  - Hungary: visa and residence permit
+  - Italy: residence permit and visa
+  - Latvia: residence permit
+  - Lithuania: ID card and residence permit
+  - Luxembourg: visa and residence permit
+  - Malta: ID card
+  - New Zealand: passport
+  - Norway: residence permit
+  - Papua New Guinea: driving licence
+  - Portugal: residence permit and visa
+  - Romania: ID card and residence permit
+  - Russia: death certificate
+  - Slovakia: visa
+  - Spain: ID card, visa, residence permit
+  - Sweden: residence permit
+  - Switzerland: visa
+  - The Netherlands: residence permit and visa
+  - Turkey: residence permit
+  - United Arab Emirates: ID card
+  - United States of America: driving licence (Utah), passport
+  - Vietnam: ID card
+  
+* Now 1810 document types with 2441 unique templates supported
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.6.0
+
+* New Swift/ObjC wrappers for iOS SDK - improved configuration and processing speed
+* Refactored iOS and Android SDK samples
+
+* Added convenience wrappers for permissible document type masks parsing from large configuration bundles
+
+* Smart Code Engine: new MRZ recognition - significant accuracy improvement
+* Smart Code Engine: improved barcodes scanning speed and precision
+* Smart Code Engine: improved embossed cards recognition accuracy
+
+* Improved OCR accuracy for Latin alphabets
+* Improved OCR accuracy for Arabic, Hebrew, and Sinhalese
+* Improved Russian vehicle registration certificate recognition
+* Improved Russian registration stamp recognition on mobile devices
+* Document face photo detection improvements
+* Overall accuracy and speed improvement for document recognition
+
+* Multiple fixes in document recognition configuration
+* Fixed common options setting behaviour in some configuration bundles
+
+* Improved face matching accuracy and speed
+* Document liveness AI: holographic security elements detection added for new document types
+* Document liveness AI: improved screen re-capture detection
+
+* Smart Document Forensics: new checks added
+
+* New document types added:
+  - Australia residence permit
+  - Gambia driving licence
+  - Cambodia driving licence
+  - Lebanon driving licence
+  - Saint Lucia driving licence
+  - Myanmar driving licence
+  - Nicaragua residence permit
+  - Nauru driving licence
+  - Panama driving licence
+  - Panama residence permit
+  - Senegal driving licence
+  - Solomon Islands driving licence
+  - USA firearm permit (Texas)
+  - USA veteran card
+  - Zambia ID card
+* New templates added for document types:
+  - Australia ID card (Queensland)
+  - Belgium visa
+  - Brunei Darussalam ID card
+  - Canada ID card
+  - Côte d'Ivoire ID card
+  - Czech Republic residence permit
+  - Germany visa
+  - Honduras ID card
+  - India driving licence (+12 templates)
+  - Malta residence permit
+  - Poland visa
+  - Russian tax identification certificate
+  - Thailand ID card
+  - USA border crossing card
+  - USA driving licence (Oklahoma, Wyoming)
+  - USA medical card
+  - USA vehicle registration certificate (Alaska, North Dakota, Nebraska)
+
+* Now 1749 document types supported
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 1.5.0
+
+* Added IdDocumentInfo class to report document description
+* Added ID card recognition on both sides - reporting separate terminal pages
+* Booklet mode for Russian national passport recognition on mobile devices
+* Reduced memory footprint and configuration size for Chinese, Japanese, and Korean
+* Web Assembly speed improvement
+* Smart Code Engine: server mode for bank cards recognition in arbitrary orientation
+* Smart Code Engine: improved detection precision and speed for QR codes, DataMatrix, AZTEC, and PDF417
+* Smart Code Engine: improved bank cards recognition speed
+* Smart Code Engine: improved optional data recognition accuracy for bank cards
+* Improved face matching accuracy and speed
+* Improved Russian national passport recognition accuracy
+* Improved document location and identification accuracy
+* Improved Bengali recognition
+* Improved Arabic recognition
+* Improved recognition accuracy of Chinese, Japanese, and Korean
+* Improved OCR accuracy for most document types
+* Improved MRZ detection and recognition accuracy
+* Fixed potential memory errors on 32-bit ARM devices
+* New document types added:
+  - Aruba driving licence
+* New templates added for document types:
+  - Colombia ID cards
+  - France Residence permit
+  - Haiti ID cards
+  - Sri Lanka ID card
+  - USA residence permit
+  - USA medcards (Bluecross)
+  - USA Vehicle registration certificates
+* Now 1700 document types supported
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 1.4.1
+
+* Added configuration models protection (*.se instead of *.zip)
+* Improved OCR accuracy
+* Minor speed improvements
+* New document types added:
+  - Angola driving licence
+  - Azerbaijan residence permit
+  - Malawi driving licence
+  - Qatar company establishment card
+  - Qatar driving licence
+  - Turkey work permit
+  - Uganda driving licence
+  - Ukraine residence permit
+  - USA work permit
+  - British Virgin Islands driving licence
+* New templates added for document types:
+  - Russian INN certificate
+  - Bolivia driving licence
+  - USA driving licence
+  - USA vehicle registration certificates
+* Other minor fixes and improvements
+
+
+
+Smart ID Engine 1.4.0
+
+* Added Web Assembly support for fully functional in-browser recognition
+* Added static offline library authentication mechanism. IMPORTANT: session signatures are now mandatory
+* Significantly reduced configuration size and footprint of neural network models
+* Improved recognition of Cyrilic based and Latin based alphabets, as well as numerical fields
+* Improved configuration and image processing speed
+* Improved recognition of vehicle registration and civil certificates
+* Improved recognition of Arabic, Persian and Urdu
+* Added EU payslips recognition (Austria, Switzerland, Croatia, The Netherlands, Slovenia)
+* Added Russian passport recognition mode with projective distortions correction for mobile use case
+* Smart Code Engine: Improved MRZ detection and recognition
+* Smart Code Engine: Improved barcodes scanning of PDF417, DataMatrix, QR and AZTEC
+* Smart Code Engine: Added AAMVA-compliant PDF417 decoding for USA driver's license
+* Smart Code Engine: Added optional data extraction from bank cards
+* Smart Code Engine: improved scanning of bank cards with 19-digit card numbers, including RuPay, Verve, V Pay, Interac, and others
+* Smart Document Forensics: introduced new Computation Document Forensic AI, with 11 threat prevention models
+* Added Bengali language OCR
+* New system for improved false-positive document detection filtering
+* Reduced memory footprint, improved speed and responsiveness of document location 
+* New document types added:
+  - Armenia vehicle registration certificate
+  - Austria pay slip
+  - Bolivia driving licence
+  - Brunei Darussalam driving licence
+  - Costa Rica driving licence
+  - Croatia pay slip
+  - Curaçao driving licence
+  - Guatemala driving licence
+  - Guernsey driving licence
+  - Jersey driving licence
+  - Macao driving licence
+  - Moldova vehicle registration certificate
+  - Mozambique driving licence
+  - Niger driving licence
+  - Panama ID card
+  - Saint Kitts and Nevis ID card
+  - Seychelles driving licence
+  - Slovenia pay slip
+  - Switzerland pay slip
+  - Tajikistan vehicle registration certificate
+  - The Netherlands pay slip
+  - Tonga driving licence
+  - Turkmenistan vehicle registration certificate
+  - Vanuatu driving licence
+  - Venezuela driving licence
+* New templates added for document types:
+  - Australia driving licence (Victoria)
+  - Belize driving licence
+  - Canada ID card
+  - Canada residence permit
+  - Côte d'Ivoire driving licence
+  - France ID card (new format)
+  - Indonesia driving licence
+  - Pakistan driving licence
+  - Philippines ID card
+  - Russia work permit
+  - Turkey residence permit
+  - USA driving licence (3 new templates)
+  - USA medical cards
+  - USA vehicle registration certificates (12 new templates)
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.3.1
+
+* Revised zero-length fields policy: empty fields will be returned with zero confidence by default
+* Improved UnionPay bank cards recognition
+* Improved Russian vehicle registration certificates scanning speed and accuracy
+* Smart Document Forensics: Improved font-based forensics for Russian internal passport
+* Improved Arabic OCR
+* Improved MRZ detection and location in single images
+* Improved QR, PDF417 and DataMatrix barcodes scanning
+* New document types added:
+  - Bahrain driving licence
+  - Brazil tax identification card
+  - Somalia driving licence
+  - Eswatini driving licence
+  - Yemen driving licence
+  - Zambia driving licence
+  - Zimbabwe driving licence
+* New templates added for document types:
+  - Kazakhstan vehicle registration certificates
+  - Saudi Arabia driving licence
+  - Slovenia residence permits
+  - USA vehicle registration certificates
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.3.0
+
+* Added special bank cards recognition module for KYC 
+* Improved speed and accuracy of MRZ recognition
+* Improved QR codes scanning accuracy and DataMatrix scanning speed
+* Improved text field recognition accuracy for Latin-based alphabets
+* Significant improvement of Russian registration stamp
+* Improved Russian national passport recognition
+* Minor system speed-up for all identity documents
+* Added new font-based Document Forensics features
+* New document types added:
+  - Grenada ID card,
+  - India driving licence,
+  - El Salvador driving licence,
+  - San Marino driving licence,
+  - South Africa driving licence
+* New templates added for document types:
+  - Belgium ID card,
+  - Columbia driving licence,
+  - Estonian residence permit,
+  - Kenia ID card,
+  - Lithuanian visa,
+  - Paraguay driving licence,
+  - Uruguay driving licence,
+  - USA driving licence (Georgia)
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.2.1
+
+* New document types added:
+  - Ecuador driving licence
+  - Egypt driving licence
+  - Morocco driving licence
+  - MRZ subtype for Kenya ID
+  - Seychelles ID card
+  - South Sudan ID card
+* New templates added for document types:
+  - Finland residence permit
+  - Hungary residence permit
+  - Iraq ID card
+  - Norway passport and ID card
+  - Pakistan driving licence
+  - Polish residence permit
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.2.0
+
+* Improved document detection and localization speed
+* Improved document detection reliability
+* Improved AZTEC and DataMatrix barcodes scanning quality
+* New MRZ detection and recognition method for server usecase, 
+  improved detection precision and recognition accuracy
+* Speed-up of DataMatrix barcodes scanning
+* Improved face detection on all identity documents
+* Deep visual memory caching feature - ability to 
+  store pre-built index for large internal engines to
+  speed up initialization
+* New document types added:
+  - Jordan driving licence
+  - Sudan ID
+  - Eswatini ID 
+  - Togo ID
+* New templates added for document types:
+  - Cyprus residence permit
+  - Guatemala ID
+  - Senegal ID
+  - Slovakia ID
+  - Sint Maarten ID
+  - Syria ID
+  - USA driving licence (Colorado, Missouri, Puerto Rico)
+  - Vietnam driving licence
+  - South Africa ID
+* Other fixes and improvements
+
+
+
+Smart ID Engine 1.1.0
+
+* Reduction of configuration bundle size (7% for full configuration)
+* Speed-up of document detection and matching
+* Improved document type verification subsystem
+* Improved quality and speed of DataMatrix, PDF-417 and AZTEC scanning
+* Improved face detection on documents
+* Document Forensics: new text features extraction and verification
+* Improved parallelism scheme - up to 20% performance increase on high-core CPUs
+* Parallel configuration - up to 60% increased initialization speed
+* Ability to control the number of worker threads added
+* 46 new document types added (with 60 templates)
+* New document types added:
+  - French medical insurance card
+  - Mali ID
+  - Namibia ID
+  - Nicaragua ID
+  - Nepal ID
+  - Philippines ID
+  - Somalia ID
+  - Tanzania ID
+* New templates added for document types:
+  - Australia ID
+  - Australia driving licence
+  - Palestine ID
+  - San Marino ID
+  - Suriname ID
+  - Uruguay ID
+  - United Arab Emirates driving licence
+  - USA driving licence (multiple states)
+  - South Africa ID
+* Other fixes and improvements.
+
+
+
+Smart ID Engine 1.0.1
+
+* Added Thai language support;
+* Significantly improved QR and Datamatrix barcodes scanning;
+* Minor improvement for Russian internal passport recognition;
+* New face photo detection improvement;
+* Face matching functionality improvement;
+* New document types added:
+  - Maldives ID
+  - Nigeria national identity management system card
+  - Russian workshop card
+* New templates added for document types:
+  - Australia ID
+  - Burkina Faso passport
+  - Egypt passport
+  - Hungary ID
+  - Luxembourg passport
+  - Nigeria ID
+  - USA Humana medical cards
+* Other minor fixes and improvements.
+
+
+
+Smart ID Engine 1.0.0
+
+New recognition engine for identity documents. 
+Standing on the shoulders of Smart IDReader, and looking far beyond.
+
+* Introducing Face matching AI;
+* Introducing document liveness detection;
+* Introducing Indo-Arabic language family recognition (Arabic, Urdu, and more);
+* Reduced configuration package size and the library footprint;
+* Modular structure of the recognition engine which allows to reduce the 
+  library size on-demand for the target document types;
+
+* Significantly improved recognition accuracy of all text fields in supported 
+  identity documents;
+* Significantly improved recognition accuracy of handwritten and 
+  handprinted fields;
+* Significantly improved bank cards recognition speed and accuracy;
+
+* Massive speed-ups of the recognition engine:
+  - New and more efficient mathematical computation model for OCR, including 
+    new 8-bit neural networks models inferetence;
+  - New deep visual memory technology for boosting document detection and 
+    localization;
+  - Speed boosts for layout analysis, text lines segmentation and more;
+  - ~200ms average per-frame recognition for USA drivers licence on 
+    iPhone SE2;
+
+* Autoselection mode: Any passport, European ID cards, European Driving licences, 
+  All European documents, All CIS documents, All Latin America ID cards, 
+  all Latin America Driving licences.
+* Added recognition of Arabic, Persian, Urdu, Tamil, Sinhalese languages;
+* Russian internal passport detection and localization - improved accuracy 
+  and 2x speed boost;
+
+* Improvement of Numbers, Latin, Cyrillic, Chinese, Japanese, Korean 
+  recognition, as well as other languages and writing systems;
+* Improved MRZ recognition accuracy;
+* Improved document type selection algorithms;
+* Improved barcodes detection and recognition accuracy;
+* Introducing IBAN bank cards recognition;
+* Improved NN-based document face detection;
+* Improved location and recognition of stamps in Russian passport: 
+  registration stamp, old passport stamp and etc;
+* Improved recognition of Russian documents - driver licence, social security 
+  card (snils), vehicle registration certificate, birth certificate, and more;
+
+* Added .NET integration interface for Linux systems;
+* Added React and Flutter integration interfaces for mobile systems;
+
+* Improved signature detection and extraction for all supported documents;
+* Introducing signature presence verification technology for all 
+  supported documents;
+* Improved face photo detection in documents;
+* Fields masking functionality - engine returns document image with masked 
+  fields (masked fields fully controlled by the customer);
+* Face photo from ID document is extracted as a separate field, ready to 
+  be used for Face matching;
+
+* Document liveness: monitor presentation attack detection;
+* Document liveness: holographic security elements detection;
+* Document liveness: Photo-copy attack detection;
+* Document liveness: face photo replacement attack detection for Russian passport;
+* Document liveness: MRZ monitor screen presentation attacks detection; 
+* Document forensics: MRZ verification and text data cross-validation;
+* Document forensics: Mandatory fields presence verification;
+* Document forensics: Font family verification;
+* Document forensics: Special document blank elements presence verification;
+* Document forensics: Issuing authority stamp detection and recognition;
+* Document forensics: face quality estimation and best photo selection;
+* Document forensics: best frame selection;
+* Document forensics: document dates authentication;
+
+* Supported 1482 document types, with more than 2200 document templates;
+
+* New document types added:
+ - MRZ subtype for Ecuador ID
+ - Aruba ID
+ - Angola Residence permit
+ - Bermuda Driving licence
+ - Bolivia ID
+ - Curaçao ID
+ - Cyprus Residence permit
+ - Micronesia Passport
+ - Ghana ID, Driving licence, Medcard
+ - Guinea ID
+ - Gambia ID
+ - Equatorial Guinea ID
+ - Guatemala ID
+ - Ireland Residence permit
+ - Iraq ID
+ - Japan Landing permission
+ - Cambodia ID
+ - Lao ID
+ - Liberia ID
+ - Lebanon ID
+ - Lesotho ID
+ - Macao ID, Passport
+ - Marshall Islands Passport
+ - Malawi ID
+ - Myanmar ID
+ - Mozambique ID, Residence permit
+ - Mauritania ID
+ - Mauritius ID
+ - Malaysia Driving licence
+ - Sint Maarten ID
+ - Uganda ID
+ - Uzbekistan ID
+ - ECOWAS Passport
+ - Zimbabwe ID
+
+* New templates added for pre-existing document types:
+ - Albania Driving licence
+ - United Arab Emirates Passport
+ - Argentina Driving licence
+ - Australia ID, Driving licence
+ - Austria ID
+ - Belgium ID
+ - Bangladesh ID, Passport, Driving licence
+ - Bulgaria ID, Residence permit
+ - Bahrain ID
+ - Belarus Passport, Internal Passport
+ - Bermuda Passport
+ - Switzerland Driving licence, Residence permit
+ - Chile ID, Passport
+ - Colombia ID
+ - Germany ID, Residence permit
+ - Djibouti Passport
+ - Denmark Residence permit
+ - Spain Residence permit
+ - Estonia Passport
+ - Finland Residence permit
+ - Fiji Passport
+ - Gabon Passport
+ - UK Passport, Residence permit
+ - Gibraltar ID
+ - Hungary Residence permit
+ - Indonesia Passport
+ - Island Residence permit
+ - Jordan ID
+ - Kazakhstan Passport
+ - Cambodia Passport
+ - Kiribati Passport
+ - Korea ID
+ - Liechtenstein Passport
+ - Sri Lanka Passport
+ - Moldova Passport
+ - Mexico Driving licence
+ - Malaysia ID
+ - Nigeria ID
+ - Netherlands ID, Residence permit
+ - Pakistan ID
+ - Portugal Residence permit
+ - Romania Residence permit
+ - Russia Marriage certificate
+ - Senegal Passport
+ - Sweden ID
+ - Tajikistan ID
+ - Timor-Leste Passport
+ - USA Driving licence, Medcards
+ - Venezuela Passport
+ - Yemen Passport
+
+* Significantly improved recognition quality for document types: 
+ - Angola ID, Passport
+ - Albania ID, Driving licence
+ - Argentina ID
+ - Armenia Passport, Driving licence
+ - Australia ID, Driving licence
+ - Austria Residence permit
+ - Azerbaijan Driving licence
+ - Burundi Passport
+ - Belgium Driving licence
+ - Benin ID
+ - Burkina Faso ID
+ - Bulgaria ID
+ - Bahrain Passport
+ - Bahamas Driving licence
+ - Bosnia and Herzegovina ID, Driving licence, Vehicle registration card
+ - Brazil ID, Driving licence
+ - Brunei Darussalam Passport
+ - Central African Republic Passport
+ - Switzerland Driving licence, Residence permit
+ - Chile ID
+ - Côte d'Ivoire ID
+ - Cameroon ID, Passport
+ - Democratic Republic of the Congo ID
+ - Congo ID
+ - Colombia ID, Passport
+ - Comoros ID
+ - Cabo Verde ID
+ - Costa Rica ID
+ - Cuba ID, Passport
+ - Cayman Islands Passport
+ - Cyprus ID, Driving licence
+ - Czechia Residence permit, Vehicle registration card
+ - Germany ID, Residence permit
+ - Djibouti ID, Passport
+ - Denmarl Driving licence
+ - Egypt ID, Passport
+ - Spain Residence permit
+ - Estonia ID, Residence permit
+ - Finland Driving licence
+ - Fiji Passport
+ - France Driving licence, Residence permit
+ - Gabon ID, Passport
+ - UK Driving licence, Residence permit
+ - Greece Driving licence
+ - Grenada Passport
+ - Hong Kong ID
+ - Hungary Driving licence
+ - Indonesia Passport
+ - Ireland Driving licence
+ - Island Passport
+ - Italy ID
+ - Jorgan Passport
+ - Kyrgyzstan Driving licence
+ - Liechtenstein ID
+ - Luxembourg ID
+ - Latvia ID
+ - Morocco ID, Passport
+ - Mexico Driving licence
+ - North Macedonia ID, Driving licence
+ - Malta ID, Driving licence, Residence permit
+ - Mozambique Passport
+ - Mauritius Passport
+ - Malaysia ID, Passport
+ - Nicaragua Passport
+ - Netherlands ID
+ - Norway Driving licence
+ - Pakistan ID
+ - Philippines Passport
+ - Poland Passport, Residence permit
+ - Qatar ID
+ - Saudi Arabia ID
+ - Slovakia Residence permit, Vehicle registration card
+ - Slovenia ID, Driving licence
+ - Sweden ID
+ - Tajikistan ID, Passport, Driving licence
+ - Turkey ID, Driving licence
+ - Taiwan Passport
+ - Ukraine Passport.national
+ - USA Driving licence, Passport card, Medical cards
+ - Uzbekistan Driving licence
+ - Samoa Passport
+
+* New and improved SDK interface (C++ and Java supported). 
+  Legacy Smart IDReader interface supported.

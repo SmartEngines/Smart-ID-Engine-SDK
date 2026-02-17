@@ -19,6 +19,7 @@ This is a collection of DEMO builds of Smart ID Engine SDK developed by Smart En
     - [Session modes](#session-modes)
   * [Session options](#session-options)
     - [Common options](#common-options)
+  * [Face Similarity Detection](#face-similarity-detection)
   * [Processing Feedback](#processing-feedback)
     - [Processing Video Authentication Feedback](#processing-video-authentication-feedback)
   * [Java API Specifics](#java-api-specifics)
@@ -558,6 +559,87 @@ Option values are always represented as strings, so if you want to pass an integ
 | `common.barcodeFeedMode` | `"sequence"` or `"single"` | `"single"` | Mode of internal barcode detection and temporal integration |
 | `common.currentDate` | `DD.MM.YYYY` | n/a | Current date required for dates verification |
 | `common.forceRawFieldsSourceExtraction` | `"true"` or `"false"` | false | Forces cropping of raw field images from source image |
+
+## Face Similarity Detection
+
+### Usage workflow
+
+1. Create an `IdEngine` instance or use an existing one:
+
+	```cpp
+	// C++
+	std::unique_ptr<se::id::IdEngine> engine(se::id::IdEngine::Create(face_config_path.c_str()));
+	```
+2. Create `IdFaceSessionSettings` from configured `IdEngine`:
+
+    ```cpp
+    // C++
+    id_face_settings_.reset(engine->CreateFaceSessionSettings());
+    
+    ```
+    Note, that `IdEngine::CreateFaceSessionSettings()` is a factory method and returns an allocated pointer. You are responsible for deleting it.
+
+3. Spawn an `IdFaceSession`:
+
+    ```cpp
+    // C++
+    const char* signature = "... YOUR SIGNATURE HERE ...";
+	id_face_session_.reset(engine->SpawnFaceSession(*id_face_settings_, signature));
+    ```
+4. Load images that contain faces:
+
+    ```cpp
+    // C++
+    std::unique_ptr<se::common::Image> imageA(
+        se::common::Image::FromFile(image_pathA)); // Loading image A
+    
+	std::unique_ptr<se::common::Image> imageB(
+        se::common::Image::FromFile(image_pathB)); // Loading image B
+    ```
+5. Compare the faces using `GetSimilarity(...)`:
+    ```cpp
+    // C++
+    double face_sim = face_session->GetSimilarity(*imageA, *imageB).GetSimilarityEstimation();
+    ```
+	This method compares two images by detecting faces in both and estimating how similar the faces are.
+
+	To get detected face rectangles from an image, use:
+	```cpp
+	// C++
+	virtual idFaceRectsResult GetRects(const common::Image& image) const = 0;
+	```
+
+#### Result Description
+
+##### GetSimilarity
+
+> **IdFaceSimilarity** - class methods check the detected faces for similarity and return the result of this check:
+- `GetSimilarity()` - (recommend) method gets one of the three possible values: `different`, `uncertain`, `same`.
+- `GetSimilarityEstimation()` -  returns a double value in the range from 0.0 to 1.0, indicating the similarity level: 1.0 — faces are 100% identical. 0.0 — faces are completely different.
+
+
+##### GetStatus
+
+> **IdFaceStatus** - class that returns the processing status of the input frames.
+
+- `GetStatus()` - get the process status. If a face is not found in one or both images, the system considers the faces to be different without further comparison.
+
+
+```log
+// Possible status values:
+// IdFaceStatus_NotUsed,            ///< Was created but not used
+// IdFaceStatus_Success,            ///< Everything alright
+// IdFaceStatus_A_FaceNotFound,     ///< Face was not found for image A
+// IdFaceStatus_B_FaceNotFound,     ///< Face was not found for image B
+// IdFaceStatus_FaceNotFound,       ///< There is no face found
+// IdFaceStatus_NoAccumulatedResult ///< Face matching with session where is no Accumulated result
+```
+
+
+- `IdFaceStatus_A_FaceNotFound`, `IdFaceStatus_B_FaceNotFound`, `IdFaceStatus_FaceNotFound` - a real face was not found in one or both images. Therefore, the faces are automatically considered different, and further comparison is skipped.
+
+- `IdFaceStatus_Success` - faces were successfully detected in both images.
+
 
 ## Processing Feedback
 
